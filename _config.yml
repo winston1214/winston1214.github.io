@@ -1,6 +1,6 @@
 title: Youngmin Kim
 logo: /assets/img/my_photo.jpg
-description: About Me
+# description: About Me
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
