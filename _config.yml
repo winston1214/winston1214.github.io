@@ -1,6 +1,6 @@
 title: Youngmin Kim
 logo: /assets/img/my_photo.jpg
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+description: About Me
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
