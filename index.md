@@ -3,7 +3,11 @@ layout: default
 ---
 
 # About Me
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+I’m a research intern student in Yonsei MIR Lab by Youngjae Yu.
+
+I have a great interest in story visualization, text-to-image generation, image captioning, and other computer vision related topics.
+
+If you interested in my research or myself, please contact email.
 
 [Link to another page](./another-page.html).
 
