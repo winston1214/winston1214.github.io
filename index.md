@@ -16,16 +16,16 @@ If you want to know more about me, take a look at my **CV**.
 * * *
 
 # [News]
-* 2023.02 Started new position at MIR Lab, Yonsei University
-* 2023.02 One paper accepted to Sensors
-* 2023.02 Received my bachelor’s degree from Incheon Nataional University.
-* 2022.12 One paper accepted to IEEE BigData Conference 2022 and presented orally in Osaka, Japan
-* 2022.01 Started new position at RAISE Lab, Incheon National University
-* 2021.12 Awarded 1st Prize in the AI-Hub Idea Challenge Competition
-* 2021.10 One paper accepted to KIPS
-* 2021.08 Awarded 2nd Prize in the KED 2021 Industrial Innovation Big Data Platform Competition
-* 2021.06 Awarded Best Paper in KCC 2021
-* 2021.06 Four paper accepted to KCC 2021
+* <b>2023.02</b> Started new position at MIR Lab, Yonsei University
+* <b>2023.02</b> One paper accepted to Sensors
+* <b>2023.02</b> Received my bachelor’s degree from Incheon Nataional University.
+* <b>2022.12</b> One paper accepted to IEEE BigData Conference 2022 and presented orally in Osaka, Japan
+* <b>2022.01</b> Started new position at RAISE Lab, Incheon National University
+* <b>2021.12</b> Awarded 1st Prize in the AI-Hub Idea Challenge Competition
+* <b>2021.10</b> One paper accepted to KIPS
+* <b>2021.08</b> Awarded 2nd Prize in the KED 2021 Industrial Innovation Big Data Platform Competition
+* <b>2021.06</b> Awarded Best Paper in KCC 2021
+* <b>2021.06</b> Four paper accepted to KCC 2021
 
 * * *
 
@@ -50,35 +50,35 @@ If you want to know more about me, take a look at my **CV**.
 #### Domestic
 - A Study of Tram-Pedestrian Collision Prediction Method Using YOLOv5 and Motion Vector 
 
-  **Youngmin Kim**, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang and Hyeonchyeol Hwang
+  <b>Youngmin Kim</b>, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang and Hyeonchyeol Hwang
 
   ***Korea Information Processing Society (KIPS) 2021*** [<a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297'>Paper</a>]
 - Optical Flow Estimation Techniques and Recent Research Trends Survey
 
-  **Youngmin Kim**, Hyeonuk Ahn and Jinpyung Kim
+  <b>Youngmin Kim</b>, Hyeonuk Ahn and Jinpyung Kim
   
   ***Korea Information Processing Society (KIPS) Special Session*** [<a href='https://kiss.kstudy.com/Detail/Ar?key=3930754'>Paper</a>]
 
 - Pedestrian Accident Prevention Model Using Deep Learning and Optical Flow
 
-  **Youngmin Kim**, Gyujin Jang, Hyunjai Bae, YoungNam Kim and Jinpyung Kim
+  <b>Youngmin Kim</b>, Gyujin Jang, Hyunjai Bae, YoungNam Kim and Jinpyung Kim
   
   ***Korea Computer Congress 2021*** [<a href='https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true'>Best Paper</a>] 🥇
 
 - Survivor Detection Model using Drones and Deep Learning
 
-  Hyunjai Bae, Gyujin Jang, **Youngmin Kim**, YoungNam Kim and Jinpyung Kim
+  Hyunjai Bae, Gyujin Jang, <b>Youngmin Kim</b>, YoungNam Kim and Jinpyung Kim
  
   ***Korea Computer Congress 2021***
 
 - Deep Learning based Multiple Damage Type Detection System for Bridge Structures
 
-  YoungNam Kim, Hyunjai Bae, **Youngmin Kim**, Gyujin Jang and Jinpyung Kim
+  YoungNam Kim, Hyunjai Bae, <b>Youngmin Kim</b>, Gyujin Jang and Jinpyung Kim
   
   ***Korea Computer Congress 2021***
   
 - Stereo Image and Skeleton Information based Inter-Distance Estimation for Social Distancing
 
-  Gyujin Jang, Hyunjai Bae, **Youngmin Kim**, YoungNam Kim and Jinpyung Kim
+  Gyujin Jang, Hyunjai Bae, <b>Youngmin Kim</b>, YoungNam Kim and Jinpyung Kim
   
   ***Korea Computer Congress 2021***
