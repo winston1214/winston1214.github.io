@@ -3,17 +3,12 @@ layout: default
 ---
 
 # About Me
-I’m a research intern student in Yonsei MIR Lab by Youngjae Yu.
+I’m a research intern student in Yonsei [MIR Lab]([./another-page.html](https://mirlab.yonsei.ac.kr/)) by Youngjae Yu.
 
 I have a great interest in story visualization, text-to-image generation, image captioning, and other computer vision related topics.
 
 If you interested in my research or myself, please contact email.
 
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 # Header 1
 
@@ -80,7 +75,7 @@ end
 1.  Item two
 1.  Item three
 1.  Item four
-
+[Link to another page](./another-page.html).
 ### And a nested list:
 
 - level 1 item
