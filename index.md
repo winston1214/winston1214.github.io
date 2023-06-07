@@ -27,7 +27,7 @@ If you interested in my research or myself, please contact email.
 #### International Conference
 - A 2-Stage Model for Vehicle Class and Orientation Detection with Photo-Realistic Image Generation
 
-  <b>Youngmin Kim*</b>, Donghwa Kang* and Hyeongboo Baek
+  <b>Youngmin Kim\*</b>, Donghwa Kang* and Hyeongboo Baek
 
   ***IEEE BigData Conference 2022*** [<a href='https://ieeexplore.ieee.org/abstract/document/10020472'>Paper</a>]
 
@@ -49,20 +49,30 @@ If you interested in my research or myself, please contact email.
   **Youngmin Kim**, Gyujin Jang, Hyunjai Bae, YoungNam Kim and Jinpyung Kim
   
   ***Korea Computer Congress 2021*** [<a href='https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true'>Best Paper</a>] 🥇
+
+- Survivor Detection Model using Drones and Deep Learning
+
+  Hyunjai Bae, Gyujin Jang, **Youngmin Kim**, YoungNam Kim and Jinpyung Kim
+ 
+  ***Korea Computer Congress 2021***
+
+- Survivor Detection Model using Drones and Deep Learning
+
+  Hyunjai Bae, Gyujin Jang, **Youngmin Kim**, YoungNam Kim and Jinpyung Kim
+ 
+  ***Korea Computer Congress 2021***
+
+- Deep Learning based Multiple Damage Type Detection System for Bridge Structures
+
+  YoungNam Kim, Hyunjai Bae, **Youngmin Kim**, Gyujin Jang and Jinpyung Kim
   
+  ***Korea Computer Congress 2021***
+  
+- Stereo Image and Skeleton Information based Inter-Distance Estimation for Social Distancing
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-
+  Gyujin Jang, Hyunjai Bae, **Youngmin Kim**, YoungNam Kim and Jinpyung Kim
+  
+  ***Korea Computer Congress 2021***
 
 
 ### Small image
@@ -86,11 +96,3 @@ If you interested in my research or myself, please contact email.
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
