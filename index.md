@@ -9,7 +9,7 @@ I have a great interest in story visualization, text-to-image generation, image 
 
 If you interested in my research or myself, please contact email.
 
-If you want to know more about me, take a look at my CV.
+If you want to know more about me, take a look at my **CV**.
 
 > ***winston121497(at)gmail.com***
 
