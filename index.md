@@ -34,7 +34,7 @@ If you interested in my research or myself, please contact email.
 
   **Youngmin Kim**, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang and Hyeonchyeol Hwang
 
-  ***Korea Information Processing Society (KIPS) 2021*** [a <href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297'>Paper</a>]
+  ***Korea Information Processing Society (KIPS) 2021*** [<a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297'>Paper</a>]
 - Optical Flow Estimation Techniques and Recent Research Trends Survey
 
   **Youngmin Kim**, Hyeonuk Ahn and Jinpyung Kim
