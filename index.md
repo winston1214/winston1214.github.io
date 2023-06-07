@@ -9,10 +9,25 @@ I have a great interest in story visualization, text-to-image generation, image 
 
 If you interested in my research or myself, please contact email.
 
+If you want to know more about me, take a look at my CV.
+
 > ***winston121497(at)gmail.com***
 
 * * *
 
+# [News]
+* 2023.02 Started new position at MIR Lab, Yonsei University
+* 2023.02 One paper accepted to Sensors
+* 2023.02 Received my bachelor’s degree from Incheon Nataional University.
+* 2022.12 One paper accepted to IEEE BigData Conference 2022 and presented orally in Osaka, Japan
+* 2022.01 Started new position at RAISE Lab, Incheon National University
+* 2021.12 Awarded 1st Prize in the AI-Hub Idea Challenge Competition
+* 2021.10 One paper accepted to KIPS
+* 2021.08 Awarded 2nd Prize in the KED 2021 Industrial Innovation Big Data Platform Competition
+* 2021.06 Awarded Best Paper in KCC 2021
+* 2021.06 Four paper accepted to KCC 2021
+
+* * *
 
 # Publication
 ### 2023
@@ -49,12 +64,6 @@ If you interested in my research or myself, please contact email.
   **Youngmin Kim**, Gyujin Jang, Hyunjai Bae, YoungNam Kim and Jinpyung Kim
   
   ***Korea Computer Congress 2021*** [<a href='https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true'>Best Paper</a>] 🥇
-
-- Survivor Detection Model using Drones and Deep Learning
-
-  Hyunjai Bae, Gyujin Jang, **Youngmin Kim**, YoungNam Kim and Jinpyung Kim
- 
-  ***Korea Computer Congress 2021***
 
 - Survivor Detection Model using Drones and Deep Learning
 
