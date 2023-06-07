@@ -36,7 +36,7 @@ If you want to know more about me, take a look at my **CV**.
 
   <b>Youngmin Kim</b> and Hyeongboo Baek
 
-  ***Sensors (IF: 3.847)*** [<a href='https://www.mdpi.com/1424-8220/23/6/3231'>Paper</a>]
+  <b><i>Sensors (IF: 3.847)</i></b> <a href='https://www.mdpi.com/1424-8220/23/6/3231'>[Paper]</a>
 
 ### 2022
 #### International Conference
@@ -44,7 +44,7 @@ If you want to know more about me, take a look at my **CV**.
 
   <b>Youngmin Kim\*</b>, Donghwa Kang* and Hyeongboo Baek
 
-  ***IEEE BigData Conference 2022*** [<a href='https://ieeexplore.ieee.org/abstract/document/10020472'>Paper</a>]
+  <b><i>IEEE BigData Conference 2022</i></b> <a href='https://ieeexplore.ieee.org/abstract/document/10020472'>[Paper]</a>
 
 ### 2021
 #### Domestic
@@ -52,33 +52,33 @@ If you want to know more about me, take a look at my **CV**.
 
   <b>Youngmin Kim</b>, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang and Hyeonchyeol Hwang
 
-  ***Korea Information Processing Society (KIPS) 2021*** [<a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297'>Paper</a>]
+  <b><i>Korea Information Processing Society (KIPS)</i></b> <a href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297'>[Paper]</a>
 - Optical Flow Estimation Techniques and Recent Research Trends Survey
 
   <b>Youngmin Kim</b>, Hyeonuk Ahn and Jinpyung Kim
   
-  ***Korea Information Processing Society (KIPS) Special Session*** [<a href='https://kiss.kstudy.com/Detail/Ar?key=3930754'>Paper</a>]
+  <b><i>Korea Information Processing Society (KIPS) Special Session</i></b> <a href='https://kiss.kstudy.com/Detail/Ar?key=3930754'>[Paper]</a>
 
 - Pedestrian Accident Prevention Model Using Deep Learning and Optical Flow
 
   <b>Youngmin Kim</b>, Gyujin Jang, Hyunjai Bae, YoungNam Kim and Jinpyung Kim
   
-  ***Korea Computer Congress 2021*** [<a href='https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true'>Best Paper</a>] 🥇
+  <b><i>Korea Computer Congress 2021</i></b> <a href='https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true'>[Best Paper]</a> 🥇
 
 - Survivor Detection Model using Drones and Deep Learning
 
   Hyunjai Bae, Gyujin Jang, <b>Youngmin Kim</b>, YoungNam Kim and Jinpyung Kim
  
-  ***Korea Computer Congress 2021***
+  <b><i>Korea Computer Congress 2021</i></b>
 
 - Deep Learning based Multiple Damage Type Detection System for Bridge Structures
 
   YoungNam Kim, Hyunjai Bae, <b>Youngmin Kim</b>, Gyujin Jang and Jinpyung Kim
   
-  ***Korea Computer Congress 2021***
+    <b><i>Korea Computer Congress 2021</i></b>
   
 - Stereo Image and Skeleton Information based Inter-Distance Estimation for Social Distancing
 
   Gyujin Jang, Hyunjai Bae, <b>Youngmin Kim</b>, YoungNam Kim and Jinpyung Kim
   
-  ***Korea Computer Congress 2021***
+    <b><i>Korea Computer Congress 2021</i></b>
