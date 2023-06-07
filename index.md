@@ -3,22 +3,48 @@ layout: default
 ---
 
 # About Me
-I’m a research intern student in Yonsei <a href='https://mirlab.yonsei.ac.kr/'>MIR Lab</a> by Youngjae Yu.
+Welcome, My name is Youngmin Kim (김영민), research intern student in Yonsei <a href='https://mirlab.yonsei.ac.kr/'>MIR Lab</a> by Youngjae Yu.
 
 I have a great interest in story visualization, text-to-image generation, image captioning, and other computer vision related topics.
 
 If you interested in my research or myself, please contact email.
 
+> ***winston121497(at)gmail.com***
 
-# Header 1
+# Publication
+## 2023
+### International Journal
+- Preprocessing for Keypoint based Sign Language Translation without Glosses
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+  <b>Youngmin Kim</b> and Hyeongboo Baek
 
-## Header 2
+  ***Sensors (IF: 3.847)*** [<a href='https://www.mdpi.com/1424-8220/23/6/3231'>Paper</a>]
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## 2022
+### International Conference
+- A 2-Stage Model for Vehicle Class and Orientation Detection with Photo-Realistic Image Generation
+
+  <b>Youngmin Kim*</b>, Donghwa Kang* and Hyeongboo Baek
+
+  ***IEEE BigData Conference 2022*** [<a href='https://ieeexplore.ieee.org/abstract/document/10020472'>Paper</a>]
+
+## 2021
+### Domestic Journal
+- A Study of Tram-Pedestrian Collision Prediction Method Using YOLOv5 and Motion Vector 
+
+  **Youngmin Kim**, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang and Hyeonchyeol Hwang
+
+  ***Korea Information Processing Society (KIPS) 2021*** [a <href='https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297'>Paper</a>]
+- Optical Flow Estimation Techniques and Recent Research Trends Survey
+
+  **Youngmin Kim**, Hyeonuk Ahn and Jinpyung Kim
+  
+  ***Korea Information Processing Society (KIPS) Special Session***
+
+### Domestic Conference
+- 
+
+
 
 ### Header 3
 
@@ -42,12 +68,6 @@ end
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
 
 ###### Header 6
 
