@@ -3,7 +3,7 @@ layout: default
 ---
 
 # About Me
-I’m a research intern student in Yonsei [MIR Lab]([./another-page.html](https://mirlab.yonsei.ac.kr/)) by Youngjae Yu.
+I’m a research intern student in Yonsei <a href='https://mirlab.yonsei.ac.kr/'>MIR Lab</a> by Youngjae Yu.
 
 I have a great interest in story visualization, text-to-image generation, image captioning, and other computer vision related topics.
 
