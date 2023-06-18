@@ -3,7 +3,7 @@ layout: default
 ---
 
 # About Me
-Welcome, My name is Youngmin Kim (김영민), research intern student in Yonsei <a href='https://mirlab.yonsei.ac.kr/'>MIR Lab</a> by Youngjae Yu.
+Welcome, My name is Youngmin Kim (김영민), Integrated Course student in Yonsei <a href='https://mirlab.yonsei.ac.kr/'>MIR Lab</a> by Youngjae Yu.
 
 I have a great interest in story visualization, text-to-image generation, image captioning, and other computer vision related topics.
 
@@ -16,16 +16,17 @@ If you want to know more about me, take a look at my **CV**.
 * * *
 
 # [News]
+* <b>2023.06.</b> Started Integrated Course at MIR Lab, Yonsei University
 * <b>2023.02.</b> Started new position at MIR Lab, Yonsei University
 * <b>2023.02.</b> One paper accepted to Sensors
-* <b>2023.02.</b> Received my bachelor’s degree from Incheon Nataional University.
+* <b>2023.02.</b> Received my bachelor’s degree from Incheon National University.
 * <b>2022.12.</b> One paper accepted to IEEE BigData Conference 2022 and presented orally in Osaka, Japan
 * <b>2022.01.</b> Started new position at RAISE Lab, Incheon National University
 * <b>2021.12.</b> Awarded 1st Prize in the AI-Hub Idea Challenge Competition
 * <b>2021.10.</b> One paper accepted to KIPS
 * <b>2021.08.</b> Awarded 2nd Prize in the KED 2021 Industrial Innovation Big Data Platform Competition
 * <b>2021.06.</b> Awarded Best Paper in KCC 2021
-* <b>2021.06.</b> Four paper accepted to KCC 2021
+* <b>2021.06.</b> Four papers accepted to KCC 2021
 
 * * *
 
