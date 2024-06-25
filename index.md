@@ -31,6 +31,12 @@ If you want to know more about me, take a look at my **CV**.
 * * *
 
 # Publication
+### 2024
+- **Scalp Diagnostic System With Label-Free Segmentation and Training-Free Image Translation**
+
+  <b>Youngmin Kim\*</b>, Saejin Kim*, Hoyeon Moon, Youngjae Yu, Junhyug Noh
+
+  <b><i>Arxiv</i></b>
 ### 2023
 #### International Journal
 - **Preprocessing for Keypoint based Sign Language Translation without Glosses**
