@@ -36,7 +36,7 @@ If you want to know more about me, take a look at my **CV**.
 
   <b>Youngmin Kim\*</b>, Saejin Kim*, Hoyeon Moon, Youngjae Yu, Junhyug Noh
 
-  <b><i>Arxiv</i></b>
+  <b><i>Arxiv</i></b> <a href='https://arxiv.org/abs/2406.17254'>[Paper]</a>
 ### 2023
 #### International Journal
 - **Preprocessing for Keypoint based Sign Language Translation without Glosses**
