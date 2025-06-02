@@ -3,14 +3,14 @@
   url: https://arxiv.org/abs/2503.14427
   journal: ACL2025 Main
   image: VENUS_PIPELINE.png
-  summary: <strong>TLDR;</strong> We introduce <strong>VisEscape</strong> inspired by Escape Room games, and evaluate the <strong>Reasoning</strong> and <strong>Decision-making</strong> of diverse MLLMs in exploration-driven and dynamic environments.
+  summary: <strong>TLDR;</strong> We introduce <strong>VENUS</strong>, a large-scale video dataset for generating and understanding nonverbal expressions, along with <strong>MARS</strong>, a model designed to leverage it.
 
 - title: "MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation"
   authors: Woohyun Cho, Youngmin Kim, Sunghyun Lee, Youngjae Yu
   url: https://arxiv.org/abs/2505.18614
   journal: Under Review
   image: MAVL.png
-  summary: <strong>TLDR;</strong> We introduce <strong>PANDA</strong>, which incorporates <strong>Human Personality Traits</strong> into AI agents for <strong>Text-based Games</strong> and examines how these traits impact their behavior and performance.
+  summary: <strong>TLDR;</strong> We present <strong>MAVL</strong>, a multimodal benchmark for singable lyrics translation, and <strong>SylAVL-CoT</strong>, a model using audio-video cues and syllable constraints for natural, accurate results.
 
 - title: "Scalp Diagnostic System With Label-Free Segmentation and Training-Free Image Translation"
   authors: Youngmin Kim*, Saejin Kim*, Hoyeon Moon, Youngjae Yu, Junhyug Noh
@@ -25,7 +25,7 @@
   url: https://arxiv.org/abs/2501.11469
   journal: Sensors (IF: 3.847)
   image: SLT.png
-  summary: <strong>TLDR;</strong> We introduce <strong>MASS</strong>, a <strong>Training-free</strong> framework that improves <strong>Visual Accuracy</strong> and reduces <strong>Bias in Image-Text Matching</strong> for pretrained visual-language models.
+  summary: <strong>TLDR;</strong> We introduce an effective preprocessing pipeline for <strong>sign language translation without glosses</strong>, combining skeleton-based motion features, keypoint normalization, and stochastic frame selection to enhance model performance.
 
 
 - title: "A 2-Stage Model for Vehicle Class and Orientation Detection with Photo-Realistic Image Generation"
@@ -33,7 +33,7 @@
   url: https://ieeexplore.ieee.org/abstract/document/10020472
   journal: IEEE BigData 2022
   image: bigdata.png
-  summary: <strong>TLDR;</strong> We introduce <strong>UNPIE</strong>, a new benchmark crafted to evaluate how multimodal inputs influence the <strong>Resolution of Lexical Ambiguities</strong>.
+  summary: <strong>TLDR;</strong> We introduce a two-stage vehicle class and orientation detection model using <strong>synthetic-to-real image</strong> translation and meta-table fusion to improve real-world prediction accuracy.
 
 
 - title: "A Study of Tram-Pedestrian Collision Prediction Method Using YOLOv5 and Motion Vector"
@@ -41,19 +41,19 @@
   url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297
   journal: Korea Information Processing Society (KIPS)
   image: KIPS.png
-  summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
+  summary: <strong>TLDR;</strong> (Korean) We introduce a <strong>real-time tram collision prediction system</strong> that combines fast object detection with YOLOv5 and a modified <strong>local dense optical flow</strong> to estimate object speed and predict collision time and probability using a single camera image.
 
 - title: "Pedestrian Accident Prevention Model Using Deep Learning and Optical Flow"
   authors: Youngmin Kim, Gyujin Jang, Hyunjai Bae, Youngnam Kim, Jinpyung Kim
   url: https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true
   journal: Korea Computer Congress 2021 (🥇Best Paper Award)
   image: KCC.png
-  summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
+  summary: <strong>TLDR;</strong> (Korean) We introduce a <strong>real-time pedestrian collision prediction system</strong> that uses YOLOv5 for fast object detection and a Local Dense Optical Flow method to quickly estimate pedestrian direction and speed, enabling accurate prediction of collision time and location.
 
 - title: "Optical Flow Estimation Techniques and Recent Research Trends Survey"
   authors: Youngmin Kim, Hyeonuk Ahn, Jinpyung Kim
   url: https://kiss.kstudy.com/Detail/Ar?key=3930754
   journal: Korea Information Processing Society (KIPS) Special Session
-  image: KIPS.png
-  summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
+  image: Optical_Flow.png
+  summary: <strong>TLDR;</strong> (Korean) We survey recent advances in <strong>optical flow estimation</strong>, comparing traditional and deep learning-based methods, and highlight their applications in autonomous driving, medical imaging, and surveillance systems.
 
