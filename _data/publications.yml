@@ -47,7 +47,7 @@
   authors: Youngmin Kim, Gyujin Jang, Hyunjai Bae, Youngnam Kim, Jinpyung Kim
   url: https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true
   journal: Korea Computer Congress 2021 (🥇Best Paper Award)
-  image: clara.png
+  image: KCC.png
   summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
 
 - title: "Optical Flow Estimation Techniques and Recent Research Trends Survey"
