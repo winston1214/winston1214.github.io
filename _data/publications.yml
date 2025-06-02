@@ -1,8 +1,8 @@
-- title: "VisEscape: A Benchmark for Evaluating Exploration-driven Decision-making in Virtual Escape Rooms"
-  authors: Seungwon Lim, Sungwoong Kim, Jihwan Yu, Sungjae Lee, Jiwan Chung, Youngjae Yu
+- title: "Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues"
+  authors: Youngmin Kim*, Jiwan Chung*, Jisoo Kim, Sunghyun Lee, Sangkyu Lee, Junhyeok Kim, Cheoljong Yang, Youngjae Yu
   url: https://arxiv.org/abs/2503.14427
-  journal: Under Review
-  image: visescape.png
+  journal: ACL2025 Main
+  image: VENUS_PIPELINE.png
   summary: <strong>TLDR;</strong> We introduce <strong>VisEscape</strong> inspired by Escape Room games, and evaluate the <strong>Reasoning</strong> and <strong>Decision-making</strong> of diverse MLLMs in exploration-driven and dynamic environments.
 
 - title: "Persona Dynamics: Unveiling the Impact of Persona Traits on Agents in Text-Based Games"
