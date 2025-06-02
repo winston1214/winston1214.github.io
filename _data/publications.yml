@@ -20,26 +20,40 @@
   summary: <strong>TLDR;</strong> We introduce a psychometric-based benchmark <strong>TRAIT</strong> to measure the personality revealed in the <strong>Behavior Patterns of LLMs</strong> along with verification of <strong>Reliability</strong> and <strong>Validity</strong>.
 
 
-- title: "MASS: Overcoming Language Bias in Image-Text Matching"
-  authors: Jiwan Chung, Seungwon Lim, Sangkyu Lee and Youngjae Yu
+- title: "Preprocessing for Keypoint based Sign Language Translation without Glosses"
+  authors: Youngmin Kim, Hyeongboo Baek
   url: https://arxiv.org/abs/2501.11469
-  journal: AAAI2025 Main 
-  image: mass.png
+  journal: Sensors (IF: 3.847)
+  image: SLT.png
   summary: <strong>TLDR;</strong> We introduce <strong>MASS</strong>, a <strong>Training-free</strong> framework that improves <strong>Visual Accuracy</strong> and reduces <strong>Bias in Image-Text Matching</strong> for pretrained visual-language models.
 
-- title: "Can visual language models resolve textual ambiguity with visual cues? Let visual puns tell you!"
-  authors: Jiwan Chung, Seungwon Lim, Jaehyun Jeon, Seungbeen Lee and Youngjae Yu
-  url: https://arxiv.org/abs/2410.01023
-  journal: EMNLP2024 Main
-  image: visualpun.png
+
+- title: "A 2-Stage Model for Vehicle Class and Orientation Detection with Photo-Realistic Image Generation"
+  authors: Youngmin Kim*, Donghwa Kang*, Hyeongboo Baek
+  url: https://ieeexplore.ieee.org/abstract/document/10020472
+  journal: IEEE BigData 2022
+  image: bigdata.png
   summary: <strong>TLDR;</strong> We introduce <strong>UNPIE</strong>, a new benchmark crafted to evaluate how multimodal inputs influence the <strong>Resolution of Lexical Ambiguities</strong>.
 
-- title: "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents"
-  authors: Jeongeun Park, Seungwon Lim, Joonhyung Lee, Sangbeom Park, Minsuk Chang, Youngjae Yu and Sungjoon Choi
-  url: https://arxiv.org/abs/2306.10376
-  journal: ICRA2024
+
+- title: "A Study of Tram-Pedestrian Collision Prediction Method Using YOLOv5 and Motion Vector"
+  authors: Youngmin Kim, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang, Hyeonchyeol Hwang
+  url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297
+  journal: Korea Information Processing Society (KIPS)
+  image: KIPS.png
+  summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
+
+- title: "Pedestrian Accident Prevention Model Using Deep Learning and Optical Flow"
+  authors: Youngmin Kim, Gyujin Jang, Hyunjai Bae, Youngnam Kim, Jinpyung Kim
+  url: https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true
+  journal: Korea Computer Congress 2021 (🥇Best Paper Award)
   image: clara.png
   summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
 
+- title: "Optical Flow Estimation Techniques and Recent Research Trends Survey"
+  authors: Youngmin Kim, Hyeonuk Ahn, Jinpyung Kim
+  url: https://kiss.kstudy.com/Detail/Ar?key=3930754
+  journal: Korea Information Processing Society (KIPS) Special Session
+  image: KIPS.png
+  summary: <strong>TLDR;</strong> We introduce <strong>CLARA</strong>, a LLM-empowered method for robots to estimate <strong>Uncertainty</strong> of user commands and to <strong>Disambiguate</strong> them via question generation for clarification.
 
-  
