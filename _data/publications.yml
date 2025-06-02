@@ -23,7 +23,7 @@
 - title: "Preprocessing for Keypoint based Sign Language Translation without Glosses"
   authors: Youngmin Kim, Hyeongboo Baek
   url: https://arxiv.org/abs/2501.11469
-  journal: Sensors (IF: 3.847)
+  journal: "Sensors (IF: 3.847)"
   image: SLT.png
   summary: <strong>TLDR;</strong> We introduce an effective preprocessing pipeline for <strong>sign language translation without glosses</strong>, combining skeleton-based motion features, keypoint normalization, and stochastic frame selection to enhance model performance.
 
@@ -39,21 +39,21 @@
 - title: "A Study of Tram-Pedestrian Collision Prediction Method Using YOLOv5 and Motion Vector"
   authors: Youngmin Kim, Hyeonuk Ahn, Heegyun Jeon, Jinpyung Kim, Gyujin Jang, Hyeonchyeol Hwang
   url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002797297
-  journal: Korea Information Processing Society (KIPS)
+  journal: "Korea Information Processing Society (KIPS)"
   image: KIPS.png
   summary: <strong>TLDR;</strong> (Korean) We introduce a <strong>real-time tram collision prediction system</strong> that combines fast object detection with YOLOv5 and a modified <strong>local dense optical flow</strong> to estimate object speed and predict collision time and probability using a single camera image.
 
 - title: "Pedestrian Accident Prevention Model Using Deep Learning and Optical Flow"
   authors: Youngmin Kim, Gyujin Jang, Hyunjai Bae, Youngnam Kim, Jinpyung Kim
   url: https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583405&googleIPSandBox=false&mark=0&ipRange=false&accessgl=Y&language=ko_KR&hasTopBanner=true
-  journal: Korea Computer Congress 2021 (🥇Best Paper Award)
+  journal: "Korea Computer Congress 2021 (🥇Best Paper Award)"
   image: KCC.png
   summary: <strong>TLDR;</strong> (Korean) We introduce a <strong>real-time pedestrian collision prediction system</strong> that uses YOLOv5 for fast object detection and a Local Dense Optical Flow method to quickly estimate pedestrian direction and speed, enabling accurate prediction of collision time and location.
 
 - title: "Optical Flow Estimation Techniques and Recent Research Trends Survey"
   authors: Youngmin Kim, Hyeonuk Ahn, Jinpyung Kim
   url: https://kiss.kstudy.com/Detail/Ar?key=3930754
-  journal: Korea Information Processing Society (KIPS) Special Session
+  journal: "Korea Information Processing Society (KIPS) Special Session"
   image: Optical_Flow.png
   summary: <strong>TLDR;</strong> (Korean) We survey recent advances in <strong>optical flow estimation</strong>, comparing traditional and deep learning-based methods, and highlight their applications in autonomous driving, medical imaging, and surveillance systems.
 
