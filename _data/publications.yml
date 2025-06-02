@@ -22,7 +22,7 @@
 
 - title: "Preprocessing for Keypoint based Sign Language Translation without Glosses"
   authors: Youngmin Kim, Hyeongboo Baek
-  url: https://arxiv.org/abs/2501.11469
+  url: https://arxiv.org/abs/2204.10511
   journal: "Sensors (IF: 3.847)"
   image: SLT.png
   summary: <strong>TLDR;</strong> We introduce an effective preprocessing pipeline for <strong>sign language translation without glosses</strong>, combining skeleton-based motion features, keypoint normalization, and stochastic frame selection to enhance model performance.
