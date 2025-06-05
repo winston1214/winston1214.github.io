@@ -77,6 +77,37 @@
                   </a>
                 </p>
               {% endif %}
+
+              {% comment %} --- DBpia 배지 --- {% endcomment %}
+              {% if publication.url contains 'dbpia.co.kr' %}
+                <p class="custom-badge-container" style="display: inline-block; margin-right: 5px;">
+                  <a href="{{ publication.url }}" class="custom-link" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
+                  </a>
+                </p>
+              {% endif %}
+
+              {% comment %} --- KISS 배지 --- {% endcomment %}
+              {% if publication.url contains 'kstudy.com' %}  {# KISS 링크는 kstudy.com을 포함 #}
+                <p class="custom-badge-container" style="display: inline-block; margin-right: 5px;">
+                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
+                  </a>
+                </p>
+              {% endif %}
+
+              {% comment %} --- KCI 배지 --- {% endcomment %}
+              {% if publication.url contains 'kci.go.kr' %}
+                <p class="custom-badge-container" style="display: inline-block;">
+                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
+                  </a>
+                </p>
+              {% endif %}
+
+
+
+
               <p class="resume-item-authors" itemprop="author">
                 {% assign author_list = publication.authors | split: ", " %}
                 {% for author in author_list %}
