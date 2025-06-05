@@ -30,7 +30,7 @@
 
 - title: "A 2-Stage Model for Vehicle Class and Orientation Detection with Photo-Realistic Image Generation"
   authors: Youngmin Kim*, Donghwa Kang*, Hyeongboo Baek
-  url: https://ieeexplore.ieee.org/abstract/document/10020472
+  url: https://arxiv.org/abs/2506.01338
   journal: IEEE BigData 2022
   image: bigdata.png
   summary: <strong>TLDR;</strong> We introduce a two-stage vehicle class and orientation detection model using <strong>synthetic-to-real image</strong> translation and meta-table fusion to improve real-world prediction accuracy.
