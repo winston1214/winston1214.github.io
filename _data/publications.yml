@@ -1,6 +1,6 @@
 - title: "Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues"
   authors: Youngmin Kim*, Jiwan Chung*, Jisoo Kim, Sunghyun Lee, Sangkyu Lee, Junhyeok Kim, Cheoljong Yang, Youngjae Yu
-  url: https://arxiv.org/abs/2503.14427
+  url: https://arxiv.org/abs/2506.00958
   journal: ACL2025 Main
   image: VENUS_PIPELINE.png
   summary: <strong>TLDR;</strong> We introduce <strong>VENUS</strong>, a large-scale video dataset for generating and understanding nonverbal expressions, along with <strong>MARS</strong>, a model designed to leverage it.
