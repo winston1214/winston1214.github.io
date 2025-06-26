@@ -5,20 +5,19 @@
   image: VENUS_PIPELINE.png
   summary: <strong>TLDR;</strong> We introduce <strong>VENUS</strong>, a large-scale video dataset for generating and understanding nonverbal expressions, along with <strong>MARS</strong>, a model designed to leverage it.
 
+- title: "Scalp Diagnostic System With Label-Free Segmentation and Training-Free Image Translation"
+  authors: Youngmin Kim*, Saejin Kim*, Hoyeon Moon, Youngjae Yu, Junhyug Noh
+  url: https://arxiv.org/abs/2406.17254
+  journal: MICCAI 2025
+  image: ScalpVision.png
+  summary: <strong>TLDR;</strong> We introduce <strong>ScalpVision</strong>, an AI system for comprehensive scalp disease and alopecia diagnosis that uses innovative hair segmentation and <strong>DiffuseIT-M</strong>, a generative model for dataset augmentation, to improve severity assessment and prediction accuracy.
+
 - title: "MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation"
   authors: Woohyun Cho, Youngmin Kim, Sunghyun Lee, Youngjae Yu
   url: https://arxiv.org/abs/2505.18614
   journal: Under Review
   image: MAVL.png
   summary: <strong>TLDR;</strong> We present <strong>MAVL</strong>, a multimodal benchmark for singable lyrics translation, and <strong>SylAVL-CoT</strong>, a model using audio-video cues and syllable constraints for natural, accurate results.
-
-- title: "Scalp Diagnostic System With Label-Free Segmentation and Training-Free Image Translation"
-  authors: Youngmin Kim*, Saejin Kim*, Hoyeon Moon, Youngjae Yu, Junhyug Noh
-  url: https://arxiv.org/abs/2406.17254
-  journal: Under Review
-  image: ScalpVision.png
-  summary: <strong>TLDR;</strong> We introduce <strong>ScalpVision</strong>, an AI system for comprehensive scalp disease and alopecia diagnosis that uses innovative hair segmentation and <strong>DiffuseIT-M</strong>, a generative model for dataset augmentation, to improve severity assessment and prediction accuracy.
-
 
 - title: "Preprocessing for Keypoint based Sign Language Translation without Glosses"
   authors: Youngmin Kim, Hyeongboo Baek
