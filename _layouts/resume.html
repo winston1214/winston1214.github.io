@@ -79,6 +79,14 @@
                 </p>
               {% endif %}
 
+              {% if publication.project %}
+                <p class="arxiv-container">
+                  <a href="{{ publication.project }}" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/Project-Page-0a7cff.svg" alt="Project Page">
+                  </a>
+                </p>
+              {% endif %}
+
               {% comment %} --- DBpia 배지 --- {% endcomment %}
               {% if publication.url contains 'dbpia.co.kr' %}
                 <p class="custom-badge-container" style="display: inline-block; margin-right: 5px;">
@@ -102,6 +110,23 @@
                 <p class="custom-badge-container" style="display: inline-block;">
                   <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
+                  </a>
+                </p>
+              {% endif %}
+
+              {% comment %} --- Project Badge --- {% endcomment %}
+              {% if publication.url contains 'kci.go.kr' %}
+                <p class="custom-badge-container" style="display: inline-block;">
+                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="Project">
+                  </a>
+                </p>
+              {% endif %}
+              {% comment %} --- Github Badge --- {% endcomment %}
+              {% if publication.url contains 'kci.go.kr' %}
+                <p class="custom-badge-container" style="display: inline-block;">
+                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="Github">
                   </a>
                 </p>
               {% endif %}
@@ -208,6 +233,7 @@
 
       .arxiv-container {
         margin: 0.1em 0 0.3em; /* Consolidated margins */
+        display: inline-block;
       }
 
       .arxiv-link {

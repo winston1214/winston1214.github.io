@@ -17,6 +17,7 @@
   url: https://arxiv.org/abs/2406.17254
   journal: MICCAI 2025
   image: ScalpVision.png
+  project: https://0110tpwls.github.io/scalpvision25/
   summary: <strong>TLDR;</strong> We introduce <strong>ScalpVision</strong>, an AI system for comprehensive scalp disease and alopecia diagnosis that uses innovative hair segmentation and <strong>DiffuseIT-M</strong>, a generative model for dataset augmentation, to improve severity assessment and prediction accuracy.
 
 - title: "SlumpGuard: An AI-Powered Real-Time System for Automated Concrete Slump Prediction via Video Analysis"
