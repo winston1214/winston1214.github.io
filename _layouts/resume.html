@@ -71,7 +71,7 @@
                 {{ publication.title }}
               </h3>
               {% if publication.url contains 'arxiv.org' or publication.project %}
-              <div class="badge-row">
+              <p class="arxiv-container">
                 {% if publication.url contains 'arxiv.org' %}
                   {% assign arxiv_id = publication.url | split: '/' | last %}
                   <a href="{{ publication.url }}" class="arxiv-link">
@@ -84,7 +84,7 @@
                     <img src="https://img.shields.io/badge/Project-Page-0a7cff.svg" alt="Project Page">
                   </a>
                 {% endif %}
-              </div>
+              </p>
               {% endif %}
 
               {% comment %} --- DBpia 배지 --- {% endcomment %}
@@ -233,15 +233,12 @@
 
       .arxiv-container {
         margin: 0.1em 0 0.3em; /* Consolidated margins */
-        display: inline-block;
-      }
-
-      .badge-row {
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        margin: 0.1em 0 0.3em;
       }
+
+      /* .badge-row no longer used */
 
       .arxiv-link {
         text-decoration: none;

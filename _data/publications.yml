@@ -3,6 +3,7 @@
   url: https://arxiv.org/abs/2505.18614
   journal: EMNLP2025 Main
   image: MAVL.png
+  project: https://k1064190.github.io/papers/paper1.html
   summary: <strong>TLDR;</strong> We present <strong>MAVL</strong>, a multimodal benchmark for singable lyrics translation, and <strong>SylAVL-CoT</strong>, a model using audio-video cues and syllable constraints for natural, accurate results.
 
 - title: "Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues"
