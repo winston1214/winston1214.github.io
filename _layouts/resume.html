@@ -70,21 +70,21 @@
               <h3 class="resume-item-title" itemprop="name">
                 {{ publication.title }}
               </h3>
-              {% if publication.url contains 'arxiv.org' %}
-                {% assign arxiv_id = publication.url | split: '/' | last %}
-                <p class="arxiv-container">
+              {% if publication.url contains 'arxiv.org' or publication.project %}
+              <div class="badge-row">
+                {% if publication.url contains 'arxiv.org' %}
+                  {% assign arxiv_id = publication.url | split: '/' | last %}
                   <a href="{{ publication.url }}" class="arxiv-link">
                     <img src="https://img.shields.io/badge/arXiv-{{ arxiv_id }}-b31b1b.svg" alt="arXiv">
                   </a>
-                </p>
-              {% endif %}
+                {% endif %}
 
-              {% if publication.project %}
-                <p class="arxiv-container">
+                {% if publication.project %}
                   <a href="{{ publication.project }}" class="project-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/Project-Page-0a7cff.svg" alt="Project Page">
                   </a>
-                </p>
+                {% endif %}
+              </div>
               {% endif %}
 
               {% comment %} --- DBpia 배지 --- {% endcomment %}
@@ -234,6 +234,13 @@
       .arxiv-container {
         margin: 0.1em 0 0.3em; /* Consolidated margins */
         display: inline-block;
+      }
+
+      .badge-row {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin: 0.1em 0 0.3em;
       }
 
       .arxiv-link {
