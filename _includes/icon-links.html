@@ -27,6 +27,9 @@
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_linkedin_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-linkedin.html %}</a></li>
   {% endif %}
 
+  {% if site.resume_cv_path %}
+  <li class="icon-link-item"><a href="{{ site.resume_cv_path | relative_url }}" class="icon-link" target="_blank" title="Download CV">{% include icons/icon-pdf.html %}</a></li>
+  {% endif %}
 
 </ul>
 {% endif %}

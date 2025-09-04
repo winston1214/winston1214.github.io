@@ -54,6 +54,9 @@ resume_social_links:
   resume_linkedin_url:          "https://www.linkedin.com/in/youngmin-kim-b799291b8/"
 resume_print_social_links:      true
 
+# CV file path for download icon
+resume_cv_path: "/images/my_cv.pdf"
+
 # Design settings
 resume_theme:                   default
 
