@@ -70,7 +70,7 @@
               <h3 class="resume-item-title" itemprop="name">
                 {{ publication.title }}
               </h3>
-              {% if publication.url contains 'arxiv.org' or publication.project %}
+              {% if publication.url contains 'arxiv.org' or publication.project or publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
               <p class="arxiv-container">
                 {% if publication.url contains 'arxiv.org' %}
                   {% assign arxiv_id = publication.url | split: '/' | last %}
@@ -84,29 +84,14 @@
                     <img src="https://img.shields.io/badge/Project-Page-0a7cff.svg" alt="Project Page">
                   </a>
                 {% endif %}
-              </p>
-              {% endif %}
 
-              {% comment %} --- PDF Download 배지 (DBpia/KISS/KCI) --- {% endcomment %}
-              {% if publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
-                <p class="custom-badge-container">
+                {% if publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
                   <a href="{{ publication.url }}" class="custom-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="PDF Download">
                   </a>
-                </p>
+                {% endif %}
+              </p>
               {% endif %}
-
-              {% comment %} --- Github Badge --- {% endcomment %}
-              {% if publication.url contains 'kci.go.kr' %}
-                <p class="custom-badge-container">
-                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="Github">
-                  </a>
-                </p>
-              {% endif %}
-
-
-
 
               <p class="resume-item-authors" itemprop="author">
                 {% assign author_list = publication.authors | split: ", " %}
