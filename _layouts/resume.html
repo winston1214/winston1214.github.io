@@ -87,44 +87,18 @@
               </p>
               {% endif %}
 
-              {% comment %} --- DBpia 배지 --- {% endcomment %}
-              {% if publication.url contains 'dbpia.co.kr' %}
-                <p class="custom-badge-container" style="display: inline-block; margin-right: 5px;">
+              {% comment %} --- PDF Download 배지 (DBpia/KISS/KCI) --- {% endcomment %}
+              {% if publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
+                <p class="custom-badge-container">
                   <a href="{{ publication.url }}" class="custom-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
+                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="PDF Download">
                   </a>
                 </p>
               {% endif %}
 
-              {% comment %} --- KISS 배지 --- {% endcomment %}
-              {% if publication.url contains 'kstudy.com' %}
-                <p class="custom-badge-container" style="display: inline-block; margin-right: 5px;">
-                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
-                  </a>
-                </p>
-              {% endif %}
-
-              {% comment %} --- KCI 배지 --- {% endcomment %}
-              {% if publication.url contains 'kci.go.kr' %}
-                <p class="custom-badge-container" style="display: inline-block;">
-                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="KCI Article">
-                  </a>
-                </p>
-              {% endif %}
-
-              {% comment %} --- Project Badge --- {% endcomment %}
-              {% if publication.url contains 'kci.go.kr' %}
-                <p class="custom-badge-container" style="display: inline-block;">
-                  <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="Project">
-                  </a>
-                </p>
-              {% endif %}
               {% comment %} --- Github Badge --- {% endcomment %}
               {% if publication.url contains 'kci.go.kr' %}
-                <p class="custom-badge-container" style="display: inline-block;">
+                <p class="custom-badge-container">
                   <a href="{{ publication.url }}" class="kci-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="Github">
                   </a>
@@ -246,6 +220,13 @@
 
       .arxiv-link img {
         vertical-align: middle;
+      }
+
+      .custom-badge-container {
+        display: inline-flex !important;
+        align-items: center;
+        margin: 0.1em 0 0.3em;
+        gap: 6px;
       }
 
       /* ==========================================================================
