@@ -26,6 +26,7 @@
   url: https://arxiv.org/abs/2507.10171
   journal: Under Review
   image: slumpguard.jpg
+  project: https://winston1214.github.io/SlumpGuard/
   summary: <strong>TLDR;</strong> We introduce <strong>SlumpGuard</strong>, an AI-powered, real-time video analysis system for fully automated concrete slump prediction at construction sites, supported by a large-scale dataset of over 6,000 real-world videos of concrete discharge.
 
 
