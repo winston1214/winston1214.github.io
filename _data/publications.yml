@@ -22,7 +22,7 @@
   summary: <strong>TLDR;</strong> We introduce <strong>ScalpVision</strong>, an AI system for comprehensive scalp disease and alopecia diagnosis that uses innovative hair segmentation and <strong>DiffuseIT-M</strong>, a generative model for dataset augmentation, to improve severity assessment and prediction accuracy.
 
 - title: "SlumpGuard: An AI-Powered Real-Time System for Automated Concrete Slump Prediction via Video Analysis"
-  authors: Youngmin Kim*, Giyeong Oh*, Kwangsoo Youm*, Youngjae Yu
+  authors: Youngmin Kim, Giyeong Oh, Kwangsoo Youm*, Youngjae Yu*
   url: https://arxiv.org/abs/2507.10171
   journal: Under Review
   image: slumpguard.jpg
