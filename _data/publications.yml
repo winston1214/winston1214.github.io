@@ -1,11 +1,11 @@
 - title: "SlumpGuard: An AI-Powered Real-Time System for Automated Concrete Slump Prediction via Video Analysis"
   authors: Youngmin Kim, Giyeong Oh, Kwangsoo Youm*, Youngjae Yu*
   url: https://arxiv.org/abs/2507.10171
-  journal: Automation in Construction (IF: 11.5)
+  journal: "Automation in Construction (IF: 11.5)"
   image: slumpguard.jpg
   project: https://winston1214.github.io/SlumpGuard/
   summary: <strong>TLDR;</strong> We introduce <strong>SlumpGuard</strong>, an AI-powered, real-time video analysis system for fully automated concrete slump prediction at construction sites, supported by a large-scale dataset of over 6,000 real-world videos of concrete discharge.
-  
+
 - title: "MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation"
   authors: Woohyun Cho, Youngmin Kim, Sunghyun Lee, Youngjae Yu
   url: https://arxiv.org/abs/2505.18614
