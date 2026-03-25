@@ -1,6 +1,6 @@
 - title: "ViKey: Enhancing Temporal Understanding in Videos via Visual Prompting"
   authors: Yeonkyung Lee*, Dayun Ju*, Youngmin Kim, Seil Kang, Seongjae Hwang
-  url: https://arxiv.org/abs/xxxx.xxxx
+  url: https://arxiv.org/abs/2603.23186
   journal: "CVPR 2026"
   image: vikey.png
   summary: <strong>TLDR;</strong> We propose <strong>ViKey</strong>, a training-free framework that enhances temporal reasoning in VideoLLMs by combining visual prompting with a Keyword-Frame Mapping (KFM) module, achieving dense-frame performance with only 20% of the frames.
