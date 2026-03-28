@@ -191,20 +191,23 @@
       }
 
       .arxiv-container {
-        margin: 0.1em 0 0.3em; /* Consolidated margins */
-        display: inline-flex;
+        margin: 0.1em 0 0.3em;
+        display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 6px;
       }
 
-      /* .badge-row no longer used */
-
-      .arxiv-link {
+      .arxiv-container a {
+        display: inline-flex;
+        align-items: center;
         text-decoration: none;
+        line-height: 0;
       }
 
-      .arxiv-link img {
+      .arxiv-container a img {
         vertical-align: middle;
+        height: 20px;
       }
 
       .custom-badge-container {
