@@ -1,3 +1,15 @@
+- title: "Towards Continuous Sign Language Conversation from Isolated Signs"
+  authors: Youngmin Kim, Kyobin Choo, Jiwoo Park, Minseo Kim,  Chanyoung Kim, Junhyeok Kim, Seongjae Hwang
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "Under Review"
+  image: signavox.png
+  summary: <strong>TLDR;</strong> We propose <strong>QWERTY</strong>, a training-free motion control framework for image-to-video DiTs that warps semantic queries and uses self-guided latent optimization to achieve precise user-defined motion without fine-tuning.
+- title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
+  authors: Kyobin Choo, Youngmin Kim, Hyunkyung Han, Geunrip Park, Chanyoung Kim, Sunyoung Jung, Seongjae Hwang
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "Under Review"
+  image: qwerty.png
+  summary: <strong>TLDR;</strong> We propose <strong>QWERTY</strong>, a training-free motion control framework for image-to-video DiTs that warps semantic queries and uses self-guided latent optimization to achieve precise user-defined motion without fine-tuning.
 - title: "ViKey: Enhancing Temporal Understanding in Videos via Visual Prompting"
   authors: Yeonkyung Lee*, Dayun Ju*, Youngmin Kim, Seil Kang, Seongjae Hwang
   url: https://arxiv.org/abs/2603.23186
