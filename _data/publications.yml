@@ -1,6 +1,6 @@
 - title: "Towards Continuous Sign Language Conversation from Isolated Signs"
   authors: Youngmin Kim, Kyobin Choo, Jiwoo Park, Minseo Kim,  Chanyoung Kim, Junhyeok Kim, Seongjae Hwang
-  url: https://arxiv.org/abs/xxxx.xxxx
+  url: https://arxiv.org/abs/2605.14705
   journal: "Under Review"
   image: signavox.png
   summary: <strong>TLDR;</strong> We propose <strong>SignaVox</strong>, a sign-centered framework that scales 3D sign conversation data from isolated signs and enables direct sign-to-sign response generation.
