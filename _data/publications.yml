@@ -1,16 +1,15 @@
-- title: "Attention Weight as a Hierarchical Tree in ViT"
-  authors: Junhyeok Kim, Minseo Kim, Seil Kang, Youngmin Kim, Seongjae Hwang
-  url: https://arxiv.org/abs/xxxx.xxxx
-  journal: "Under Review"
-  image: attention_weight.png
-  summary: <strong>TLDR;</strong> We propose a <strong>QK-tree</strong> framework that decomposes ViT attention into semantically meaningful query-key pair clusters, enabling interpretable analysis and training-free object localization across diverse ViT backbones.
-- title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
 - title: "Towards Continuous Sign Language Conversation from Isolated Signs"
   authors: Youngmin Kim, Kyobin Choo, Jiwoo Park, Minseo Kim,  Chanyoung Kim, Junhyeok Kim, Seongjae Hwang
   url: https://arxiv.org/abs/2605.14705
   journal: "Under Review"
   image: signavox.png
   summary: <strong>TLDR;</strong> We propose <strong>SignaVox</strong>, a sign-centered framework that scales 3D sign conversation data from isolated signs and enables direct sign-to-sign response generation.
+- title: "Attention Weight as a Hierarchical Tree in ViT"
+  authors: Junhyeok Kim, Minseo Kim, Seil Kang, Youngmin Kim, Seongjae Hwang
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "Under Review"
+  image: attention_weight.png
+  summary: <strong>TLDR;</strong> We propose a <strong>QK-tree</strong> framework that decomposes ViT attention into semantically meaningful query-key pair clusters, enabling interpretable analysis and training-free object localization across diverse ViT backbones.
 - title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
   authors: Kyobin Choo, Youngmin Kim, Hyunkyung Han, Geunrip Park, Chanyoung Kim, Sunyoung Jung, Seongjae Hwang
   url: https://arxiv.org/abs/xxxx.xxxx
