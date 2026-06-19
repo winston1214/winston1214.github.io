@@ -1,415 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+    <div class="page-wrapper" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
-      <header class="page-header">
-
-        <!-- 아바타 이미지 -->
-        {% if site.resume_avatar == 'true' %}
-        <img src="images/photo.jpg" alt="my photo" class="avatar no-print" itemprop="image" style="width: 200px; height: auto;">
-        {% endif %}
-
-        <!-- 이름 -->
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
-
-        <!-- 연락처 정보 -->
-        {% if site.display_header_contact_info == 'true' %}
-        <div class="header-contact-info">
-          <p>{{ site.resume_header_contact_info }}</p>
+      <!-- ═══ Sidebar ═══ -->
+      <aside class="sidebar">
+        <div class="sidebar-profile">
+          {% if site.resume_avatar == 'true' %}
+          <img src="images/photo.jpg" alt="{{ site.resume_name }}" class="profile-img" itemprop="image">
+          {% endif %}
+          <h1 class="sidebar-name" itemprop="name">{{ site.resume_name }}</h1>
+          <p class="sidebar-title" itemprop="jobTitle">Ph.D Student</p>
+          <p class="sidebar-affiliation">MICV Lab, Yonsei University</p>
         </div>
-        {% endif %}
-        <div class="title-bar no-print">
-          <!-- 직함 -->
-          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
-          <!-- 아이콘 링크 -->
-          {% include icon-links.html %}
-        </div>
-        <!-- 소개 요약 -->
-        <div class="executive-summary" itemprop="description">
-          <p>Hello! I'm Youngmin Kim. I'm currently a researcher at Yonsei University in the <a href="https://micv.yonsei.ac.kr">Medical Imaging & Computer Vision Lab</a>, advised by <a href="https://micv.yonsei.ac.kr/seongjae">Prof. Seong Jae Hwang</a>. 
-          Previously, during my Master's course, I was advised by <a href="#">Prof. Youngjae Yu</a>.</p>
-          <p>My research question is <strong>"How can we enable AI systems to deeply understand and extract meaningful information from videos, and how can this understanding be effectively connected to human perception and communication?"</strong>.
-            I'm deeply interested in how AI can comprehend the complex and rich information embedded in videos, and how this understanding can facilitate natural interactions between humans and AI. Ultimately, I see AI as a tool designed to improve people's lives, and I believe human-AI interaction should focus on making AI more accessible and effective for users.
-          With this perspective, I'm particularly interested in the understanding and generation of <strong>nonverbal expressions</strong>, as well as the recognition and production of <strong>sign language</strong>.
+
+        <p class="sidebar-interests">
+          Researching <span class="typed-text" id="typed" data-phrases='["Video Understanding", "Human-AI Interaction", "Sign Language", "Nonverbal Communication"]'></span><span class="type-cursor" aria-hidden="true">|</span>
         </p>
+
+        <!-- social icons -->
+        <div class="sidebar-social">
+          {% if site.resume_social_links.resume_github_url %}
+          <a href="{{ site.resume_social_links.resume_github_url }}" target="_blank" rel="noopener" title="GitHub" itemprop="sameAs"><i class="fab fa-github"></i></a>
+          {% endif %}
+          {% if site.resume_social_links.resume_linkedin_url %}
+          <a href="{{ site.resume_social_links.resume_linkedin_url }}" target="_blank" rel="noopener" title="LinkedIn" itemprop="sameAs"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
+          {% if site.resume_contact_email %}
+          <a href="mailto:{{ site.resume_contact_email }}" title="Email" itemprop="email"><i class="fas fa-envelope"></i></a>
+          {% endif %}
         </div>
-        <!-- 연락 버튼 -->
-        {% comment %}
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+
+        <!-- CV / Scholar buttons -->
+        <div class="sidebar-buttons">
+          {% if site.resume_cv_path %}
+          <a href="{{ site.resume_cv_path | relative_url }}" class="btn btn-primary" target="_blank"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
+          {% endif %}
+          {% if site.resume_social_links.resume_google_scholar_url %}
+          <a href="{{ site.resume_social_links.resume_google_scholar_url }}" class="btn btn-outline" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+          {% endif %}
+        </div>
+
+        <!-- nav -->
+        <nav class="sidebar-nav no-print">
+          <a href="#about">About</a>
+          <a href="#news">Latest News</a>
+          <a href="#experience">Research Experience</a>
+          <a href="#publications">Publications</a>
+        </nav>
+
+        <!-- education -->
+        {% if site.data.education and site.data.education.size > 0 %}
+        <div class="sidebar-section">
+          <h3 class="sidebar-section-title">Education</h3>
+          <ul class="sidebar-edu-list">
+            {% for edu in site.data.education %}
+            <li class="sidebar-edu-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div class="sidebar-edu-info">
+                <strong>{{ edu.degree }}</strong>
+                <span>{{ edu.uni }}</span>
+                <div class="edu-years">{{ edu.year }}</div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
-        {% endcomment %}
+      </aside>
 
-      </header>
+      <!-- ═══ Main Content ═══ -->
+      <main class="main-content">
 
-      <!-- 경력 섹션 -->
-      <section class="content-section">
+        <!-- About -->
+        <section id="about" class="about-section">
+          <h2 class="about-heading">About Me</h2>
+          <p class="about-text" itemprop="description">
+            Hello! I'm Youngmin Kim. I'm currently a researcher at Yonsei University in the
+            <a href="https://micv.yonsei.ac.kr" target="_blank" rel="noopener">Medical Imaging &amp; Computer Vision Lab</a>,
+            advised by <a href="https://micv.yonsei.ac.kr/seongjae" target="_blank" rel="noopener">Prof. Seong Jae Hwang</a>.
+            Previously, during my Master's course, I was advised by <a href="#">Prof. Youngjae Yu</a>.
+          </p>
+          <p class="about-text">
+            My research centers on how AI can understand <strong>videos</strong> and connect that understanding to
+            <strong>human perception and communication</strong>, with a particular focus on
+            <strong>nonverbal expression</strong> and <strong>sign language</strong>.
+          </p>
+          <div class="about-contact">
+            <span><i class="fas fa-map-marker-alt"></i> Seoul, South Korea</span>
+            <span><i class="fas fa-envelope"></i> <a href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a></span>
+          </div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Open to Collaborations
+          </div>
+        </section>
 
-        <header class="section-header">
-          <h2>Publications</h2>
-        </header>
+        <!-- News -->
+        {% if site.data.news and site.data.news.size > 0 %}
+        <section id="news" class="section">
+          <div class="section-header">
+            <h2>Latest News</h2>
+            <div class="line"></div>
+          </div>
+          <ul class="news-list">
+            {% for item in site.data.news %}
+            <li class="news-row">
+              <div class="news-date">{{ item.date }}</div>
+              <div class="news-text">{{ item.content | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
 
-        {% for publication in site.data.publications %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-          <div class="publication-container">
-            {% if publication.image %}
-            <div class="publication-image">
-              <img src="images/publications/{{ publication.image }}" alt="Publication thumbnail">
-            </div>
-            {% endif %}
-            <div class="publication-content">
-              <h3 class="resume-item-title" itemprop="name">
-                {{ publication.title }}
-              </h3>
-              {% if publication.url contains 'arxiv.org' or publication.project or publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
-              <p class="arxiv-container">
-                {% if publication.url contains 'arxiv.org' %}
-                  {% assign arxiv_id = publication.url | split: '/' | last %}
-                  <a href="{{ publication.url }}" class="arxiv-link">
-                    <img src="https://img.shields.io/badge/arXiv-{{ arxiv_id }}-b31b1b.svg" alt="arXiv">
-                  </a>
-                {% endif %}
+        <!-- Research Experience -->
+        {% if site.data.experience and site.data.experience.size > 0 %}
+        <section id="experience" class="section">
+          <div class="section-header">
+            <h2>Research Experience</h2>
+            <div class="line"></div>
+          </div>
+          <ul class="timeline">
+            {% for exp in site.data.experience %}
+            <li class="timeline-item">
+              <div class="timeline-date">{{ exp.date }}</div>
+              <p class="timeline-org">{{ exp.org }}</p>
+              <p class="timeline-role">{{ exp.role }}</p>
+              {% if exp.detail %}<p class="timeline-detail">{{ exp.detail | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
 
-                {% if publication.project %}
-                  <a href="{{ publication.project }}" class="project-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/Project-Page-0a7cff.svg" alt="Project Page">
-                  </a>
-                {% endif %}
-
-                {% if publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
-                  <a href="{{ publication.url }}" class="custom-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/PDF-Download-orange.svg" alt="PDF Download">
-                  </a>
-                {% endif %}
-              </p>
+        <!-- Publications -->
+        <section id="publications" class="section">
+          <div class="section-header">
+            <h2>Publications</h2>
+            <div class="line"></div>
+          </div>
+          <div class="pub-filters no-print">
+            <button class="pub-filter active" data-filter="all">All</button>
+            <button class="pub-filter" data-filter="first">First Author</button>
+          </div>
+          <div class="pub-grid">
+            {% for publication in site.data.publications %}
+            {% assign first_author = publication.authors | split: ', ' | first %}
+            <div class="pub-card" data-first="{% if first_author contains 'Youngmin Kim' %}true{% else %}false{% endif %}" itemscope itemtype="http://schema.org/ScholarlyArticle">
+              {% if publication.image %}
+              <img class="pub-card-img" src="images/publications/{{ publication.image }}" alt="Thumbnail of {{ publication.title }}">
               {% endif %}
-
-              <p class="resume-item-authors" itemprop="author">
-                {% assign author_list = publication.authors | split: ", " %}
-                {% for author in author_list %}
-                  {% if author contains "Youngmin Kim" %}
-                    <span class="author-highlight">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
-                  {% else %}
-                    <span class="author-normal">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
+              <div class="pub-card-body">
+                <div class="pub-venue">
+                  <span class="pub-venue-tag {% if publication.journal == 'Under Review' %}muted{% endif %}">{{ publication.journal }}</span>
+                  {% if publication.year %}<span class="pub-venue-year">{{ publication.year }}</span>{% endif %}
+                </div>
+                <h3 itemprop="name">{{ publication.title }}</h3>
+                <p class="pub-authors" itemprop="author">
+                  {% assign author_list = publication.authors | split: ", " %}
+                  {% for author in author_list %}
+                    {% if author contains "Youngmin Kim" %}<span class="me">{{ author }}</span>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                </p>
+                <div class="pub-links">
+                  {% if publication.url contains 'arxiv.org' %}
+                  <a class="pub-link" href="{{ publication.url }}" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> arXiv</a>
                   {% endif %}
-                {% endfor %}
-              </p>
-              <p class="resume-item-journal {% if publication.journal == 'Under Review' %}journal-under-review{% endif %}">
-                {{ publication.journal }}{% if publication.year %} &bull; {{ publication.year }}{% endif %}
-              </p>
-              <!-- TLDR 토글 (div로 변경) -->
-              <div class="tldr-toggle">See tldr</div>
-              <!-- TLDR 내용 -->
-              <div class="tldr-details">
-                <p class="resume-item-copy">{{ publication.summary | markdownify }}</p>
+                  {% if publication.project %}
+                  <a class="pub-link" href="{{ publication.project }}" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project</a>
+                  {% endif %}
+                  {% if publication.dataset %}
+                  <a class="pub-link" href="{{ publication.dataset }}" target="_blank" rel="noopener"><i class="fas fa-database"></i> Dataset</a>
+                  {% endif %}
+                  {% if publication.url contains 'dbpia.co.kr' or publication.url contains 'kstudy.com' or publication.url contains 'kci.go.kr' %}
+                  <a class="pub-link" href="{{ publication.url }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a>
+                  {% endif %}
+                  {% if publication.summary %}
+                  <span class="tldr-toggle">TL;DR</span>
+                  {% endif %}
+                </div>
+                {% if publication.summary %}
+                <div class="tldr-details">
+                  <p class="resume-item-copy">{{ publication.summary | markdownify }}</p>
+                </div>
+                {% endif %}
               </div>
             </div>
+            {% endfor %}
           </div>
-        </div><!-- end of resume-item -->
-        {% endfor %}
+        </section>
 
-      </section>
+        <footer class="page-footer">
+          <p>&copy; {{ site.resume_name }} &middot; <a href="mailto:{{ site.resume_contact_email }}">{{ site.resume_contact_email }}</a></p>
+        </footer>
 
-
-
-
+      </main>
     </div>
 
-    <style>
-      /* ==========================================================================
-         General Styles
-         ========================================================================== */
-      .resume-item-title {
-        margin-bottom: 0.1em; /* Slightly adjusted for consistency */
-      }
-
-      .resume-item-copy {
-        margin-top: 0;
-        line-height: 1.4; /* Added for potentially better readability */
-      }
-
-      /* ==========================================================================
-         Publication Section Styles
-         ========================================================================== */
-      .publication-container {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        margin-bottom: 1.5em; /* Added spacing between publication items */
-      }
-
-      .publication-image {
-        flex: 0 0 200px;
-      }
-
-      .publication-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 4px;
-        border: 3px solid #ddd;
-        display: block; /* Prevent potential extra space below image */
-      }
-
-      .publication-content {
-        flex: 1;
-      }
-
-      .resume-item-authors {
-        font-size: 0.9em;
-        color: #666;
-        margin: 0 0 0.3em; /* Consolidated margins */
-      }
-
-      .author-highlight {
-        font-weight: bold;
-        color: #000;
-      }
-
-      .author-normal {
-        font-weight: normal;
-      }
-
-      .resume-item-journal {
-        font-size: 1em;
-        font-weight: bold;
-        color: #000;
-        margin: 0 0 0.5em; /* Consolidated margins */
-      }
-
-      .journal-under-review {
-        font-weight: normal;
-        color: #666;
-      }
-
-      .arxiv-container {
-        margin: 0.1em 0 0.3em;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 6px;
-      }
-
-      .arxiv-container a {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-        line-height: 0;
-      }
-
-      .arxiv-container a img {
-        vertical-align: middle;
-        height: 20px;
-      }
-
-      .custom-badge-container {
-        display: inline-flex !important;
-        align-items: center;
-        margin: 0.1em 0 0.3em;
-        gap: 6px;
-      }
-
-      /* ==========================================================================
-         Executive Summary & Links
-         ========================================================================== */
-      .executive-summary a {
-        color: #0077cc;
-        text-decoration: none;
-        position: relative;
-        font-weight: 500;
-        padding: 0 2px;
-        transition: all 0.3s ease;
-      }
-
-      .executive-summary a::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #0077cc;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s ease;
-      }
-
-      .executive-summary a:hover {
-        color: #005fa3;
-        background-color: rgba(0, 119, 204, 0.08);
-        border-radius: 3px;
-      }
-
-      .executive-summary a:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
-
-      /* ==========================================================================
-         Research Questions (If used elsewhere, keep; otherwise can be removed if only for example)
-         ========================================================================== */
-      .research-questions {
-        margin-left: 20px;
-        padding-left: 15px;
-        border-left: 3px solid #0077cc;
-      }
-
-      .research-questions ul {
-        margin: 8px 0;
-        padding-left: 20px;
-        list-style-type: disc;
-      }
-
-      .research-questions li {
-        margin: 8px 0;
-        line-height: 1.5;
-        color: #333;
-      }
-
-      .research-questions li::marker {
-        color: #0077cc;
-        font-size: 1.2em;
-      }
-
-      /* ==========================================================================
-         TLDR Toggle Styles
-         ========================================================================== */
-      .tldr-toggle {
-        display: none; /* Hidden by default, shown in media query */
-        cursor: pointer;
-        font-size: 0.9em;
-        color: #0077cc;
-        margin: 8px 0 5px; /* Consolidated margins */
-        padding-left: 15px;
-        position: relative;
-        user-select: none;
-        line-height: 1; /* Ensure consistent height */
-      }
-
-      .tldr-toggle::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%) rotate(0deg);
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-left: 6px solid #0077cc;
-        transition: transform 0.2s ease-in-out;
-      }
-
-      .tldr-toggle.active::before {
-        transform: translateY(-50%) rotate(90deg);
-      }
-
-      .tldr-toggle:hover {
-        text-decoration: underline;
-      }
-
-      .tldr-details {
-        display: block; /* Visible by default, hidden in media query */
-        /* The resume-item-copy style applies to the <p> inside */
-      }
-
-      /* ==========================================================================
-         Media Queries (Mobile)
-         ========================================================================== */
-      @media (max-width: 768px) {
-        .publication-container {
-          align-items: flex-start; /* Align items to top on mobile */
-          gap: 15px;
-        }
-
-        /* 모바일 화면에서 이미지 컨테이너 너비를 150px로 조정합니다. */
-        .publication-image {
-            flex: 0 0 100px; /* 이미지 컨테이너 너비를 150px로 설정 */
-        }
-
-        /* Removed redundant .publication-image rules, base styles apply */
-        /* Removed redundant .publication-content rule */
-
-        /* Use more specific selector for the title on mobile to override base h3 styles */
-        .publication-content .resume-item-title { /* Increased specificity */
-          font-size: 1.0rem; /* Adjusted font size for mobile, feel free to change */
-          margin-bottom: 0.2em; /* Added small margin back for spacing */
-        }
-
-        .tldr-toggle {
-          display: inline-block; /* Show toggle on mobile */
-        }
-
-        .tldr-details {
-          display: none; /* Hide details by default on mobile */
-        }
-
-        .tldr-details.visible {
-          display: block; /* Show details when toggled */
-        }
-      }
-    </style>
-
-    <!-- TLDR 토글 스크립트 -->
+    <!-- TL;DR toggle + sidebar nav scroll-spy -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Select all toggle elements (divs)
-        const toggleButtons = document.querySelectorAll('.tldr-toggle');
+      document.addEventListener('DOMContentLoaded', function () {
+        // Typewriter effect for the sidebar interests
+        (function () {
+          var el = document.getElementById('typed');
+          if (!el) return;
+          var phrases;
+          try { phrases = JSON.parse(el.getAttribute('data-phrases')); } catch (e) { phrases = []; }
+          if (!phrases.length) return;
+          var pi = 0, ci = 0, deleting = false;
+          function tick() {
+            var word = phrases[pi];
+            ci += deleting ? -1 : 1;
+            el.textContent = word.slice(0, ci);
+            var delay = deleting ? 45 : 95;
+            if (!deleting && ci === word.length) { delay = 1500; deleting = true; }
+            else if (deleting && ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; delay = 400; }
+            setTimeout(tick, delay);
+          }
+          tick();
+        })();
 
-        toggleButtons.forEach(button => {
-          button.addEventListener('click', function() {
-            // Find the next sibling element which should be the details div
-            const details = this.nextElementSibling;
+        // Publication filters (All / First Author)
+        (function () {
+          var filters = Array.prototype.slice.call(document.querySelectorAll('.pub-filter'));
+          var cards = Array.prototype.slice.call(document.querySelectorAll('.pub-card'));
+          if (!filters.length) return;
+          filters.forEach(function (f) {
+            f.addEventListener('click', function () {
+              filters.forEach(function (x) { x.classList.remove('active'); });
+              this.classList.add('active');
+              var mode = this.getAttribute('data-filter');
+              cards.forEach(function (c) {
+                var show = mode === 'all' || (mode === 'first' && c.getAttribute('data-first') === 'true');
+                c.style.display = show ? '' : 'none';
+              });
+            });
+          });
+        })();
 
-            // Check if the next sibling is the details container
-            if (details && details.classList.contains('tldr-details')) {
-              // Toggle the 'active' class on the button itself for styling (e.g., arrow rotation)
-              this.classList.toggle('active');
-              // Toggle the 'visible' class on the details container to show/hide it
-              details.classList.toggle('visible');
-
-              // Update button text based on visibility state
-              // Need to re-add the icon space logic if text changes wipe it out
-              const isVisible = details.classList.contains('visible');
-              // Preserve the ::before pseudo-element by not overwriting entire textContent
-              // Instead, manage text via a span or adjust approach if needed.
-              // For simplicity, keeping original text changing logic. Consider accessibility.
-              if (isVisible) {
-                  // Note: Direct textContent manipulation removes ::before content rendering space.
-                  // A better approach involves a span inside the toggle or adjusting padding dynamically.
-                  // Reverting to simpler text change for now as per original code.
-                  this.textContent = 'Hide tldr';
-              } else {
-                  this.textContent = 'See tldr';
-              }
-              // Re-apply necessary styles if textContent change affects layout (like padding)
-              // This part is tricky with direct textContent change. Original JS assumed it worked visually.
-            } else {
-              console.error('Could not find tldr-details element for', this);
-            }
+        document.querySelectorAll('.tldr-toggle').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var d = this.parentElement.parentElement.querySelector('.tldr-details');
+            if (d) { this.classList.toggle('active'); d.classList.toggle('visible'); }
           });
         });
 
-        // Ensure initial text is correct if JS runs after potential CSS hiding
-        // This part is less critical if CSS handles initial state correctly
-        toggleButtons.forEach(button => {
-            const details = button.nextElementSibling;
-            if (details && details.classList.contains('tldr-details')) {
-                if (!details.classList.contains('visible')) {
-                   // Ensure initial text is 'See tldr' if details are hidden initially (e.g., on mobile)
-                   // Again, care needed not to break the pseudo-element space.
-                   // button.textContent = 'See tldr'; // Uncomment if needed, but be aware of side-effects
-                }
-            }
-        });
+        var navLinks = Array.prototype.slice.call(document.querySelectorAll('.sidebar-nav a'));
+        var sections = navLinks.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+        function onScroll() {
+          if (!sections.length) return;
+          var y = window.scrollY + 100;
+          var current = sections[0];
+          sections.forEach(function (s) { if (s.offsetTop <= y) current = s; });
+          navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + current.id); });
+        }
+        document.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll);
+        onScroll();
       });
     </script>
 

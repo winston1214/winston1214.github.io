@@ -1,0 +1,24 @@
+# Latest News — newest first (top = most recent).
+# To add an item, copy a two-line block (date + content) and put it in date order.
+# date:    free-form text shown on the left (e.g. "Jun 2026")
+# content: supports markdown (**bold**) and HTML (<strong>, <a href>)
+
+# ↓↓↓ ADD NEW ITEMS HERE (at the top, newest first) ↓↓↓
+- date: "Jun 2026"
+  content: "🎉 Paper accepted to **ECCV 2026**"
+# ↑↑↑ ADD NEW ITEMS HERE ↑↑↑
+# - date: "May 2026"
+#   content: "Our paper **SignaVox** is now available on arXiv!"
+- date: "Feb 2026"
+  content: "🎉 Paper accepted to **CVPR 2026**"
+- date: "Jan 2026"
+  content: "🎉 Paper accepted to **Automation in Construction (IF: 11.5)**"
+- date: "Sep 2025"
+  content: "🎓 Joined **MICV Lab** at Yonsei University"
+- date: "Aug 2025"
+  content: "🎉 Paper accepted to **EMNLP 2025**"
+- date: "May 2025"
+  content: "🎉 Paper accepted to **MICCAI 2025**"
+- date: "Feb 2025"
+  content: "🎉 Paper accepted to **ACL 2025**"
+

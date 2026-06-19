@@ -1,0 +1,18 @@
+# Experience (newest first). Edit freely.
+# role: position title | org: institution/company | date: free-form | detail: optional (markdown ok)
+- role: "Graduate Research Assistant, Medical Imaging & Computer Vision Lab (MICV Lab)"
+  org: "Yonsei University"
+  date: "2025 — Present"
+  detail: "Advised by Prof. Seong Jae Hwang."
+- role: "Graduate Research Assistant, Multimodal Intelligence & Robotics Lab (MIR Lab)"
+  org: "Yonsei University"
+  date: "2023 — 2025"
+  detail: "Advised by Prof. Youngjae Yu."
+- role: "Undergraduate Research Assistant, Real-time AI Systems Engineering Lab (RAISE Lab)"
+  org: "Incheon National University"
+  date: "2021 — 2023"
+  detail: "Advised by Prof. Hyeongboo Baek."
+- role: "Research Assistant"
+  org: "Advanced Institute of Convergence Technology (AICT)"
+  date: "2020 — 2021"
+  detail: "Advised by Ph.D Jinpyeong Kim."
