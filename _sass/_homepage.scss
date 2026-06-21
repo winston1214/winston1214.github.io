@@ -316,6 +316,8 @@ body.theme-default .btn-outline:hover { border-color: var(--accent); color: var(
   letter-spacing: .03em;
 }
 .pub-venue-tag.muted { background: var(--bg-hover); border-color: var(--border-color); color: var(--text-secondary); }
+.pub-link.coming-soon-link { color: #b45309; cursor: default; border-bottom: 1px solid transparent; }
+.pub-link.coming-soon-link:hover { border-bottom-color: transparent; }
 .pub-venue-year { font-size: .75rem; color: var(--text-muted); }
 .pub-authors { font-size: .83rem; color: var(--text-secondary); margin: 0 0 8px; line-height: 1.5; }
 .pub-authors .me { color: var(--text-primary); font-weight: 600; }

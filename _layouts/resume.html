@@ -170,8 +170,10 @@
                   {% endfor %}
                 </p>
                 <div class="pub-links">
-                  {% if publication.url contains 'arxiv.org' %}
-                  <a class="pub-link" href="{{ publication.url }}" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> arXiv</a>
+                  {% if publication.coming_soon %}
+                  <span class="pub-link coming-soon-link"><i class="fas fa-clock"></i> Coming Soon</span>
+                  {% elsif publication.url contains 'arxiv.org' %}
+                  <a class="pub-link" href="{{ publication.url }}" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a>
                   {% endif %}
                   {% if publication.project %}
                   <a class="pub-link" href="{{ publication.project }}" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project</a>

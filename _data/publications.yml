@@ -1,23 +1,36 @@
+- title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
+  authors: Kyobin Choo, Youngmin Kim, Hyunkyung Han, Geunrip Park, Chanyoung Kim, Sunyoung Jung, Seong Jae Hwang
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "ECCV 2026"
+  coming_soon: true
+  image: qwerty.png
+  summary: <strong>TLDR;</strong> We propose <strong>QWERTY</strong>, a training-free motion control framework for image-to-video DiTs that warps semantic queries and uses self-guided latent optimization to achieve precise user-defined motion without fine-tuning.
+
 - title: "Towards Continuous Sign Language Conversation from Isolated Signs"
-  authors: Youngmin Kim, Kyobin Choo, Jiwoo Park, Minseo Kim,  Chanyoung Kim, Junhyeok Kim, Seongjae Hwang
+  authors: Youngmin Kim, Kyobin Choo, Jiwoo Park, Minseo Kim,  Chanyoung Kim, Junhyeok Kim, Seong Jae Hwang
   url: https://arxiv.org/abs/2605.14705
   journal: "Under Review"
   image: signavox.png
   summary: <strong>TLDR;</strong> We propose <strong>SignaVox</strong>, a sign-centered framework that scales 3D sign conversation data from isolated signs and enables direct sign-to-sign response generation.
+
 - title: "Attention Weight as a Hierarchical Tree in ViT"
-  authors: Junhyeok Kim, Minseo Kim, Seil Kang, Youngmin Kim, Seongjae Hwang
+  authors: Junhyeok Kim, Minseo Kim, Seil Kang, Youngmin Kim, Seong Jae Hwang
   url: https://arxiv.org/abs/xxxx.xxxx
   journal: "Under Review"
+  coming_soon: true
   image: attention_weight.png
   summary: <strong>TLDR;</strong> We propose a <strong>QK-tree</strong> framework that decomposes ViT attention into semantically meaningful query-key pair clusters, enabling interpretable analysis and training-free object localization across diverse ViT backbones.
-- title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
-  authors: Kyobin Choo, Youngmin Kim, Hyunkyung Han, Geunrip Park, Chanyoung Kim, Sunyoung Jung, Seongjae Hwang
+
+- title: "Sparse Feature Analysis and Control for Robust Vision-Language-Action Models"
+  authors: Minseo Kim, Junhyeok Kim, Jinyeong Kim, \textbf{Youngmin Kim}, Seong Jae Hwang
   url: https://arxiv.org/abs/xxxx.xxxx
-  journal: "ECCV 2026"
-  image: qwerty.png
-  summary: <strong>TLDR;</strong> We propose <strong>QWERTY</strong>, a training-free motion control framework for image-to-video DiTs that warps semantic queries and uses self-guided latent optimization to achieve precise user-defined motion without fine-tuning.
+  journal: "Under Review"
+  image: sae_vla.png
+  summary: <strong>TLDR;</strong> We show that sparse autoencoder features can detect and mitigate visual-perturbation failures in VLA models through feature-level steering..
+  coming_soon: true
+
 - title: "ViKey: Enhancing Temporal Understanding in Videos via Visual Prompting"
-  authors: Yeonkyung Lee*, Dayun Ju*, Youngmin Kim, Seil Kang, Seongjae Hwang
+  authors: Yeonkyung Lee*, Dayun Ju*, Youngmin Kim, Seil Kang, Seong Jae Hwang
   url: https://arxiv.org/abs/2603.23186
   journal: "CVPR 2026"
   image: vikey.png
