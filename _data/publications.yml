@@ -22,11 +22,11 @@
   summary: <strong>TLDR;</strong> We propose a <strong>QK-tree</strong> framework that decomposes ViT attention into semantically meaningful query-key pair clusters, enabling interpretable analysis and training-free object localization across diverse ViT backbones.
 
 - title: "Sparse Feature Analysis and Control for Robust Vision-Language-Action Models"
-  authors: Minseo Kim, Junhyeok Kim, Jinyeong Kim, \textbf{Youngmin Kim}, Seong Jae Hwang
+  authors: Minseo Kim, Junhyeok Kim, Jinyeong Kim, Youngmin Kim, Seong Jae Hwang
   url: https://arxiv.org/abs/xxxx.xxxx
   journal: "Under Review"
   image: sae_vla.png
-  summary: <strong>TLDR;</strong> We show that sparse autoencoder features can detect and mitigate visual-perturbation failures in VLA models through feature-level steering..
+  summary: <strong>TLDR;</strong> We show that sparse autoencoder features can detect and mitigate visual-perturbation failures in VLA models through feature-level steering.
   coming_soon: true
 
 - title: "ViKey: Enhancing Temporal Understanding in Videos via Visual Prompting"

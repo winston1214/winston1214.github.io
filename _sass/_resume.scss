@@ -177,13 +177,53 @@
 // footer styles
 
 .visitor-stats {
-  text-align: center;
   margin: 1rem 0 2rem;
 
   img {
     max-width: 100%;
     height: auto;
   }
+}
+
+// The Visitors section heading doubles as a collapse toggle (a <button>).
+.visitor-toggle {
+  width: 100%;
+  background: none;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  user-select: none;
+
+  h2 { transition: color .15s ease; }
+
+  // chevron after the title: ▶ collapsed, ▼ expanded
+  &::after {
+    content: '';
+    flex: 0 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid currentColor;
+    opacity: .45;
+    transform: rotate(0deg);
+    transition: transform .2s ease-in-out, opacity .15s ease;
+  }
+
+  &.active::after { transform: rotate(90deg); }
+  &:hover h2 { color: var(--accent); }
+  &:hover::after { opacity: .8; }
+}
+
+.visitor-details {
+  display: none;
+  margin-top: .25rem;
+
+  &.visible { display: block; }
 }
 
 .page-footer {
