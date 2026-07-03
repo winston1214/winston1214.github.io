@@ -1,8 +1,7 @@
 - title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
   authors: Kyobin Choo, Youngmin Kim, Hyunkyung Han, Geunrip Park, Chanyoung Kim, Sunyoung Jung, Seong Jae Hwang
-  url: https://arxiv.org/abs/xxxx.xxxx
+  url: https://arxiv.org/abs/2607.01869
   journal: "ECCV 2026"
-  coming_soon: true
   image: qwerty.png
   summary: <strong>TLDR;</strong> We propose <strong>QWERTY</strong>, a training-free motion control framework for image-to-video DiTs that warps semantic queries and uses self-guided latent optimization to achieve precise user-defined motion without fine-tuning.
 
