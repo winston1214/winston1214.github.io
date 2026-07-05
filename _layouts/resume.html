@@ -66,8 +66,8 @@
         <nav class="sidebar-nav no-print">
           <a href="#about">About</a>
           <a href="#news">Latest News</a>
-          <a href="#experience">Research Experience</a>
           <a href="#publications">Publications</a>
+          <a href="#experience">Research Experience</a>
         </nav>
 
         <!-- education -->
@@ -135,26 +135,6 @@
         </section>
         {% endif %}
 
-        <!-- Research Experience -->
-        {% if site.data.experience and site.data.experience.size > 0 %}
-        <section id="experience" class="section">
-          <div class="section-header">
-            <h2>Research Experience</h2>
-            <div class="line"></div>
-          </div>
-          <ul class="timeline">
-            {% for exp in site.data.experience %}
-            <li class="timeline-item">
-              <div class="timeline-date">{{ exp.date }}</div>
-              <p class="timeline-org">{{ exp.org }}</p>
-              <p class="timeline-role">{{ exp.role }}</p>
-              {% if exp.detail %}<p class="timeline-detail">{{ exp.detail | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </section>
-        {% endif %}
-
         <!-- Publications -->
         <section id="publications" class="section">
           <div class="section-header">
@@ -213,6 +193,26 @@
             {% endfor %}
           </div>
         </section>
+
+        <!-- Research Experience -->
+        {% if site.data.experience and site.data.experience.size > 0 %}
+        <section id="experience" class="section">
+          <div class="section-header">
+            <h2>Research Experience</h2>
+            <div class="line"></div>
+          </div>
+          <ul class="timeline">
+            {% for exp in site.data.experience %}
+            <li class="timeline-item">
+              <div class="timeline-date">{{ exp.date }}</div>
+              <p class="timeline-org">{{ exp.org }}</p>
+              <p class="timeline-role">{{ exp.role }}</p>
+              {% if exp.detail %}<p class="timeline-detail">{{ exp.detail | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
 
         <!-- Visitors -->
         <section id="visitors" class="section">
