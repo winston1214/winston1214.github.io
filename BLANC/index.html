@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLANC: Adaptive Temporal Scheduling for Sign Language Production</title>
+  <meta name="description" content="BLANC is a gloss-free sign language production framework that combines a multi-rate motion tokenizer (MRVQ) with adaptive block diffusion driven by a Latent Articulatory Clock.">
+  <meta property="og:title" content="BLANC: Adaptive Temporal Scheduling for Sign Language Production">
+  <meta property="og:description" content="Gloss-free sign language production with multi-rate tokenization and adaptive block diffusion.">
+  <meta property="og:image" content="static/images/method.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script>
+    try {
+      var t = localStorage.getItem("blanc-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="container">
+    <a class="brand" href="#">BLANC</a>
+    <div class="links">
+      <a href="#abstract">Abstract</a>
+      <a href="#motivation">Motivation</a>
+      <a href="#method">Method</a>
+      <a href="#videos">Videos</a>
+      <a href="#results">Results</a>
+      <a href="#cite">BibTeX</a>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="container">
+    <h1><span class="name">BLANC</span></h1>
+    <div class="subtitle">Adaptive Temporal Scheduling for Sign Language Production</div>
+    <div class="venue">Under Review</div>
+
+    <div class="authors">
+      <a href="https://winston1214.github.io/" target="_blank" rel="noopener">Youngmin Kim</a><sup>1</sup>,
+      <span>Seoyeong Hwang</span><sup>2</sup>,
+      <span>Sujung Hong</span><sup>1</sup>,
+      <span>Seong Jae Hwang</span><sup>1</sup>
+    </div>
+    <div class="affil">
+      <span><sup>1</sup>Yonsei University</span>
+      <span class="aff-sep">&middot;</span>
+      <span><sup>2</sup>Ewha Womans University</span>
+    </div>
+
+    <div class="btn-row">
+      <!-- TODO: replace with the arXiv PDF link once available -->
+      <a class="btn disabled" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5z"/></svg>
+        Paper (soon)
+      </a>
+      <!-- TODO: replace with the arXiv abstract link once available -->
+      <a class="btn disabled" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24"><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+        arXiv (soon)
+      </a>
+      <a class="btn" href="https://github.com/winston1214/BLANC" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.8 1.08.8 2.18v3.23c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        Code
+      </a>
+      <a class="btn" href="#videos">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        Video Results
+      </a>
+      <a class="btn" href="https://huggingface.co/winston1214/BLANC" target="_blank" rel="noopener">
+        <span class="hf">🤗</span> BLANC Weights
+      </a>
+      <a class="btn" href="https://huggingface.co/winston1214/MRVQ" target="_blank" rel="noopener">
+        <span class="hf">🤗</span> MRVQ Weights
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== TL;DR ===== -->
+<section style="border-top:none; padding-top:12px; padding-bottom:10px;">
+  <div class="container">
+    <div class="tldr">
+      <span class="tldr-badge">TL;DR</span>
+      <p>
+        <strong>BLANC</strong> generates signing motion from text by tokenizing the body and both hands at
+        <strong>different temporal rates</strong> (MRVQ) and generating motion in <strong>variable-duration blocks</strong>
+        whose lengths are predicted by a <strong>Latent Articulatory Clock</strong>, learned without gloss annotations.
+        It achieves state-of-the-art gloss-free SLP on PHOENIX-2014T and CSL-Daily.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEASER ===== -->
+<section style="border-top:none; padding-top:22px;">
+  <div class="container">
+    <figure>
+      <div class="fig"><img src="static/images/concept.jpg" alt="Comparison of autoregressive, discrete diffusion, fixed block diffusion and BLANC adaptive block generation, with boundary alignment scores." loading="eager"></div>
+      <figcaption>
+        <b>Temporal generation strategies.</b> (a) Autoregressive models generate token by token, discrete diffusion
+        denoises a fixed-length sequence, and block diffusion uses fixed-size blocks. <span class="sc">Blanc</span>
+        predicts <em>adaptive</em> block durations while denoising each block in parallel. (b) Predicted block
+        boundaries align better with CSLR-estimated sign transitions than uniform partitions.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== ABSTRACT ===== -->
+<section id="abstract" class="abstract">
+  <div class="container narrow">
+    <h2>Abstract</h2>
+    <p>
+      Sign language production (SLP) aims to synthesize expressive signing motion from written text. Modeling signing
+      motion presents two key temporal challenges. First, fine-grained hand articulations demand higher temporal
+      resolution than relatively slower body movements. Second, signing events unfold over variable durations, calling
+      for adaptive temporal scheduling during generation.
+    </p>
+    <p>
+      To address these challenges, we first introduce a Multi-Rate Vector Quantizer (MRVQ), an articulation-decoupled
+      motion tokenizer that represents the body and both hands as separate discrete streams at distinct temporal
+      resolutions. Building on this representation, we propose <span class="sc">Blanc</span>
+      (<b>BL</b>ock-wise <b>A</b>daptive diffusio<b>N</b> with Articulatory <b>C</b>lock), a gloss-free SLP framework
+      that generates variable-duration motion blocks causally while denoising tokens in parallel within each block. At
+      its core, a Latent Articulatory Clock (LAC) learns temporal structure from multi-scale motion-derived partitions
+      to predict block durations and sequence termination during generation. We further introduce inference-time
+      body-conditioned hand refinement to improve coordination across articulators.
+    </p>
+    <p>
+      Extensive experiments on PHOENIX-2014T and CSL-Daily demonstrate that <span class="sc">Blanc</span> achieves
+      state-of-the-art performance in sign language production.
+    </p>
+  </div>
+</section>
+
+<!-- ===== MOTIVATION ===== -->
+<section id="motivation">
+  <div class="container">
+    <h2>Two Temporal Challenges</h2>
+    <p class="lead">Signing is realized through coordinated body and hand motion that evolves at different rates and over variable durations.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="k">Challenge 1 · Representation</div>
+        <h4>Hands move faster than the body</h4>
+        <p>With a shared token rate, coarse tokenization discards hand detail, while fine tokenization inflates the token budget for every articulator.</p>
+      </div>
+      <div class="card teal">
+        <div class="k">Challenge 2 · Generation</div>
+        <h4>Signing events have variable durations</h4>
+        <p>Fixed-size blocks impose uniform generation intervals that can split coherent articulations or merge distinct motion phases.</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="v">2.47×</div><div class="l">higher hand linear velocity</div></div>
+      <div class="stat"><div class="v">2.18×</div><div class="l">higher hand angular velocity</div></div>
+      <div class="stat"><div class="v">r = 4 / 2</div><div class="l">body / hand temporal compression</div></div>
+    </div>
+
+    <figure style="margin-top:18px;">
+      <div class="fig"><img src="static/images/mrvq_analysis.png" alt="Velocity analysis showing hands move faster than body in both 3D joint space and angular space." loading="lazy"></div>
+      <figcaption><b>Velocity analysis on PHOENIX-2014T and CSL-Daily.</b> Hands exhibit higher clip-level RMS velocity than the body in global 3D joint space (a) and local angular space (b), motivating separate temporal rates for body and hand motion.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== METHOD ===== -->
+<section id="method">
+  <div class="container">
+    <h2>Method</h2>
+    <figure>
+      <div class="fig"><img src="static/images/method.jpg" alt="Overview of MRVQ architecture, BLANC training with the multi-scale teacher and LAC, and BLANC inference with adaptive blocks and hand refinement." loading="lazy"></div>
+      <figcaption><b>Overview.</b> (a) MRVQ architecture for multi-rate motion tokenization. (b) Training pipeline of <span class="sc">Blanc</span> with motion-derived temporal supervision. (c) Inference with adaptive block generation and body-conditioned hand refinement.</figcaption>
+    </figure>
+
+    <div class="cards cols-2" style="margin-top:26px;">
+      <div class="card">
+        <div class="k">Tokenizer</div>
+        <h4>MRVQ: Multi-Rate Vector Quantizer</h4>
+        <p>Separate VQ-VAEs encode the body (stride 4) and each hand (stride 2) into discrete streams, so hands keep twice the temporal resolution of the body with a compact token budget.</p>
+      </div>
+      <div class="card teal">
+        <div class="k">Where to split?</div>
+        <h4>Multi-scale Teacher</h4>
+        <p>Measures persistent changes in frozen MRVQ codebook embeddings across articulators and scales, then solves a bounded exact-cover DP to produce variable-length block targets. No gloss labels needed.</p>
+      </div>
+      <div class="card teal">
+        <div class="k">How long?</div>
+        <h4>Latent Articulatory Clock</h4>
+        <p>A causal controller that predicts the next block duration and sequence termination from remaining text semantics and generated motion history.</p>
+      </div>
+      <div class="card">
+        <div class="k">Inference</div>
+        <h4>Body-conditioned Hand Refinement</h4>
+        <p>Remasks the most uncertain hand tokens in each block and re-predicts them with the same generator, keeping body tokens fixed as articulatory context.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO RESULTS ===== -->
+<section id="videos">
+  <div class="container">
+    <h2>Video Results</h2>
+    <p class="lead">Pick an example to compare <span class="sc">Blanc</span> with the ground truth and gloss-free baselines on the same input sentence.</p>
+    <!-- Example buttons and video panels are generated by static/js/app.js from VIDEO_EXAMPLES.
+         Clips live at static/videos/<example>/<method>.mp4 -->
+    <div class="pills" id="example-pills" role="tablist"></div>
+    <p class="prompt-line" id="example-prompt"></p>
+    <div class="method-grid" id="method-grid"></div>
+    <p class="note">Videos autoplay muted and loop. <span class="chip ours">BLANC (Ours)</span> is highlighted.</p>
+  </div>
+</section>
+
+<!-- ===== RESULTS ===== -->
+<section id="results">
+  <div class="container">
+    <h2>Results</h2>
+
+    <h3>Comparison with gloss-free SLP methods</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr class="group">
+            <th rowspan="3">Method</th>
+            <th colspan="6">PHOENIX-2014T</th>
+            <th colspan="6">CSL-Daily</th>
+          </tr>
+          <tr class="group">
+            <th colspan="2">DTW-PA-JPE ↓</th><th colspan="2">DTW-JPE ↓</th><th colspan="2">Back-Translation ↑</th>
+            <th colspan="2">DTW-PA-JPE ↓</th><th colspan="2">DTW-JPE ↓</th><th colspan="2">Back-Translation ↑</th>
+          </tr>
+          <tr>
+            <th>Body</th><th>Hand</th><th>Body</th><th>Hand</th><th>BLEU-4</th><th>ROUGE-L</th>
+            <th>Body</th><th>Hand</th><th>Body</th><th>Hand</th><th>BLEU-4</th><th>ROUGE-L</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>T2M<sup>†</sup></td><td>36.54</td><td>3.63</td><td>35.69</td><td>24.12</td><td>0.31</td><td>5.95</td><td>28.83</td><td>3.58</td><td>30.97</td><td>18.63</td><td>0.00</td><td>10.80</td></tr>
+          <tr><td>MotionGPT</td><td>8.22</td><td>1.70</td><td>8.31</td><td>9.07</td><td>5.62</td><td>16.88</td><td>10.05</td><td>2.19</td><td>9.86</td><td>10.65</td><td>0.00</td><td>9.15</td></tr>
+          <tr><td>MoMask</td><td>8.20</td><td>1.58</td><td>7.91</td><td>7.69</td><td>6.44</td><td>19.81</td><td>10.58</td><td>2.15</td><td>10.51</td><td>9.61</td><td>0.57</td><td>15.89</td></tr>
+          <tr><td>SOKE (no dict.)</td><td>8.24</td><td>1.64</td><td>8.69</td><td>8.07</td><td>5.13</td><td>23.86</td><td>9.94</td><td class="second">1.77</td><td>9.63</td><td>8.70</td><td class="best">2.66</td><td class="best">21.13</td></tr>
+          <tr><td>SignPR<sup>†</sup></td><td>7.87</td><td>1.87</td><td>7.67</td><td>7.43</td><td>1.04</td><td>9.82</td><td>10.63</td><td>2.37</td><td>10.75</td><td>9.72</td><td>0.27</td><td>13.06</td></tr>
+          <tr><td>SignSparK (no KF)</td><td>8.35</td><td>1.81</td><td>8.32</td><td>7.96</td><td>1.21</td><td>10.08</td><td>9.83</td><td>2.16</td><td class="best">9.17</td><td>8.78</td><td>0.32</td><td>12.82</td></tr>
+          <tr class="ours"><td><span class="sc">Blanc</span> (w/o Refinement)</td><td class="best">7.57</td><td class="second">1.49</td><td class="best">7.31</td><td class="second">7.01</td><td class="second">9.58</td><td class="second">24.83</td><td class="best">9.67</td><td class="best">1.71</td><td class="second">9.48</td><td class="best">8.19</td><td>1.86</td><td>18.52</td></tr>
+          <tr class="ours"><td><span class="sc">Blanc</span></td><td class="second">7.58</td><td class="best">1.48</td><td class="second">7.33</td><td class="best">7.00</td><td class="best">9.85</td><td class="best">25.36</td><td class="second">9.75</td><td class="best">1.71</td><td>9.54</td><td class="second">8.25</td><td class="second">2.13</td><td class="second">19.05</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tnote"><b>Bold</b>: best · <u>Underline</u>: second best · † reproduced results.</p>
+
+    <div class="two-col" style="margin-top:26px;">
+      <div>
+        <h3>Fixed vs. adaptive blocks</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr class="group"><th rowspan="2">Block size</th><th colspan="3">PHOENIX-2014T</th><th colspan="3">CSL-Daily</th></tr>
+              <tr><th>Body ↓</th><th>Hand ↓</th><th>BLEU-4 ↑</th><th>Body ↓</th><th>Hand ↓</th><th>BLEU-4 ↑</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>L′ = 1 (AR)</td><td>9.10</td><td>1.69</td><td>6.37</td><td>11.14</td><td>2.01</td><td>0.68</td></tr>
+              <tr><td>L′ = 5</td><td>11.33</td><td>2.10</td><td>4.37</td><td>15.17</td><td>2.59</td><td>0.98</td></tr>
+              <tr><td>L′ = 10</td><td>11.79</td><td>2.23</td><td>4.10</td><td>14.79</td><td>2.56</td><td>0.98</td></tr>
+              <tr><td>L′ = 20</td><td>10.95</td><td>2.11</td><td>4.76</td><td>14.53</td><td>2.56</td><td>1.18</td></tr>
+              <tr class="ours"><td><span class="sc">Blanc</span></td><td class="best">7.58</td><td class="best">1.48</td><td class="best">9.85</td><td class="best">9.75</td><td class="best">1.71</td><td class="best">2.13</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tnote">Body and Hand report DTW-PA-JPE.</p>
+      </div>
+      <div>
+        <h3>Tokenizer reconstruction</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr class="group"><th rowspan="2">Tokenizer</th><th colspan="2">PHOENIX-2014T ↓</th><th colspan="2">CSL-Daily ↓</th></tr>
+              <tr><th>Body</th><th>Hands</th><th>Body</th><th>Hands</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>MotionGPT</td><td>29.78</td><td>5.69</td><td>30.71</td><td>4.27</td></tr>
+              <tr><td>MoMask</td><td>23.65</td><td>5.27</td><td>25.07</td><td>4.12</td></tr>
+              <tr><td>SOKE</td><td>25.63</td><td>4.66</td><td>21.56</td><td>3.41</td></tr>
+              <tr class="ours"><td>MRVQ (Ours)</td><td class="best">15.48</td><td class="best">4.37</td><td class="best">11.80</td><td class="best">3.06</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tnote">PA-MPJPE of reconstructed motion.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:36px;">Qualitative comparison</h3>
+    <div data-tabs>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-target="qual-1">Text-to-sign generation</button>
+        <button class="tab" role="tab" aria-selected="false" data-target="qual-recon">MRVQ reconstruction</button>
+      </div>
+      <div id="qual-1" class="tab-panel">
+        <figure>
+          <div class="fig"><img src="static/images/qualitative.jpg" alt="Qualitative comparison of BLANC, SOKE and SignSparK against ground truth on PHOENIX-2014T and CSL-Daily." loading="lazy"></div>
+          <figcaption>Ground truth vs. <span class="sc">Blanc</span>, SOKE, and SignSparK on PHOENIX-2014T (blue) and CSL-Daily (yellow).</figcaption>
+        </figure>
+      </div>
+      <div id="qual-recon" class="tab-panel" hidden>
+        <figure>
+          <div class="fig"><img src="static/images/mrvq_recon.jpg" alt="MRVQ reconstruction compared with other tokenizers." loading="lazy"></div>
+          <figcaption>Tokenizer reconstruction against MoMask, SOKE, and MotionGPT. Red circles mark hand regions, where MRVQ most closely matches the ground-truth hand shape.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <h3 style="margin-top:36px;">Effect of hand refinement ratio</h3>
+    <figure>
+      <div class="fig"><img src="static/images/refinement_ratio.png" alt="BLEU-4 and PA error as a function of the fraction of refined hand tokens." loading="lazy"></div>
+      <figcaption>Back-translation BLEU-4 (left) and PA error (right) by fraction of remasked hand tokens. PHOENIX-2014T peaks at 100% and CSL-Daily at 15%.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== BIBTEX ===== -->
+<section id="cite">
+  <div class="container">
+    <h2>BibTeX</h2>
+    <!-- TODO: replace with the final citation after arXiv release -->
+    <div class="bib">
+      <button class="copy-btn" id="copy-bib" type="button">Copy</button>
+<pre id="bibtex">@article{kim2026blanc,
+  title   = {BLANC: Adaptive Temporal Scheduling for Sign Language Production},
+  author  = {Kim, Youngmin and Hwang, Seoyeong and Hong, Sujung and Hwang, Seong Jae},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</pre>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Page layout inspired by <a href="https://sunyj-hxppy.github.io/halo/" target="_blank" rel="noopener">HALO</a>
+    and <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a>.
+  </div>
+</footer>
+
+<script src="static/js/app.js"></script>
+</body>
+</html>
