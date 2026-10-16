@@ -8,8 +8,8 @@
 const METHODS = [
   { id: "gt",        label: "Ground Truth", ref: true },
   { id: "blanc",     label: "BLANC (Ours)", ours: true },
-  { id: "soke",      label: "SOKE" },
-  { id: "signspark", label: "SignSparK" },
+  { id: "soke",      label: "SOKE (no dict.)" },
+  { id: "signspark", label: "SignSparK (no KF)" },
 ];
 
 const VIDEO_EXAMPLES = [
