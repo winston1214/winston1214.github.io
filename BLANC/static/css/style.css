@@ -177,7 +177,7 @@ td.second { text-decoration: underline; text-underline-offset: 3px; }
 
 footer { padding: 28px 0 40px; text-align: center; color: var(--fg-soft); font-size: .85rem; border-top: 1px solid var(--border); }
 
-/* ===== video results (HALO-style gallery) ===== */
+/* ===== video results gallery ===== */
 .aff-sep { margin: 0 8px; }
 .pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 0 0 16px; }
 .pill {
