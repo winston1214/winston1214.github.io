@@ -27,6 +27,10 @@ const VIDEO_EXAMPLES = [
   },
 ];
 
+// Respect reduced-motion: start paused, the visitor can press Play.
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let videosPaused = reduceMotion;
+
 function buildPanel(exampleId, method) {
   const fig = document.createElement("figure");
   fig.className = "method-cell" + (method.ours ? " ours" : "");
@@ -39,7 +43,8 @@ function buildPanel(exampleId, method) {
   const video = document.createElement("video");
   video.muted = true;
   video.loop = true;
-  video.autoplay = true;
+  video.autoplay = !videosPaused;
+  video.preload = "auto";
   video.playsInline = true;
   video.setAttribute("playsinline", "");
   video.setAttribute("aria-label", method.label);
@@ -67,7 +72,7 @@ function showExample(idx) {
   // Restart all panels together once every clip can play, so they stay in sync.
   let ready = 0;
   videos.forEach(v => v.addEventListener("canplay", () => {
-    if (++ready === videos.length) videos.forEach(x => { x.currentTime = 0; x.play().catch(() => {}); });
+    if (++ready === videos.length) videos.forEach(x => { x.currentTime = 0; if (!videosPaused) x.play().catch(() => {}); });
   }, { once: true }));
 }
 
@@ -88,6 +93,27 @@ function showExample(idx) {
     pills.appendChild(b);
   });
   showExample(0);
+
+  const toggle = document.getElementById("play-toggle");
+  if (!toggle) return;
+  const label = toggle.querySelector("span");
+  const sync = () => {
+    toggle.setAttribute("aria-pressed", videosPaused);
+    label.textContent = videosPaused ? "Play" : "Pause";
+  };
+  toggle.addEventListener("click", () => {
+    videosPaused = !videosPaused;
+    const vids = document.querySelectorAll("#method-grid video");
+    if (videosPaused) {
+      vids.forEach(v => v.pause());
+    } else {
+      // Resume from a common timestamp so the panels stay aligned.
+      const t = vids.length ? vids[0].currentTime : 0;
+      vids.forEach(v => { v.currentTime = t; v.play().catch(() => {}); });
+    }
+    sync();
+  });
+  sync();
 })();
 
 // Qualitative figure tabs
