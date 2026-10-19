@@ -1,3 +1,28 @@
+- title: "BLANC: Adaptive Temporal Scheduling for Sign Language Production"
+  authors: Youngmin Kim, Seoyeong Hwang, Sujung Hong, Seong Jae Hwang
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "Under Review"
+  coming_soon: true
+  image: blanc.png
+  project: https://winston1214.github.io/BLANC/
+  summary: <strong>TLDR;</strong> We propose <strong>BLANC</strong>, a gloss-free sign language production framework that combines multi-rate body–hand tokenization with adaptive-length block diffusion to model the variable temporal structure of signing.
+
+- title: "Starve the MLP, Feed the Attention: Resolving Vision-Knowledge Conflicts in VideoLLMs"
+  authors: Chanyong Yoon, Youngmin Kim, Seong Jae Hwang
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "Under Review"
+  coming_soon: true
+  image: vertex.png
+  summary: <strong>TLDR;</strong> We introduce <strong>VERTEX</strong>, a training-free framework that resolves vision-knowledge conflicts in VideoLLMs by suppressing textual priors in MLPs and reinforcing visual evidence in Attention.
+
+- title: "CogViD: A Comprehensive Cognitive Benchmark for Evaluating Video MLLMs"
+  authors: Khawar Islam, Muhammad Zaigham Zaheer, Youngmin Kim, Soyeong Jeong, Basim Azam, Muzammal Naseer, NAVEED AKHTAR
+  url: https://arxiv.org/abs/xxxx.xxxx
+  journal: "Under Review"
+  coming_soon: true
+  image: cogvid.png
+  summary: <strong>TLDR;</strong> We introduce <strong>CogViD</strong>, a cognitive theory-inspired video understanding benchmark comprising 25K QA pairs across 58 sub-tasks and six hierarchical cognitive levels, revealing key limitations of video MLLMs.
+  
 - title: "QWERTY: Training-Free Motion Control via Query-Warped Video Diffusion Transformers"
   authors: Kyobin Choo, Youngmin Kim, Hyunkyung Han, Geunrip Park, Chanyoung Kim, Sunyoung Jung, Seong Jae Hwang
   url: https://arxiv.org/abs/2607.01869
@@ -12,7 +37,7 @@
   image: signavox.png
   summary: <strong>TLDR;</strong> We propose <strong>SignaVox</strong>, a sign-centered framework that scales 3D sign conversation data from isolated signs and enables direct sign-to-sign response generation.
 
-- title: "Attention Weight as a Hierarchical Tree in ViT"
+- title: "ViT Attention Weight as a Hierarchical Tree"
   authors: Junhyeok Kim, Minseo Kim, Seil Kang, Youngmin Kim, Seong Jae Hwang
   url: https://arxiv.org/abs/xxxx.xxxx
   journal: "Under Review"
