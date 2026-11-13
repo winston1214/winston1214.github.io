@@ -4,6 +4,8 @@
 # content: supports markdown (**bold**) and HTML (<strong>, <a href>)
 
 # ↓↓↓ ADD NEW ITEMS HERE (at the top, newest first) ↓↓↓
+- date: "Nov 2026"
+  content: "<img src='/images/jori.png' alt='Jori' style='height:1.4em; vertical-align:-0.35em;'><img src='/images/pong.png' alt='Pong' style='height:1.4em; vertical-align:-0.35em;'> Adopted two adorable robot arms, **Jori & Pong**!"
 - date: "Jul 2026"
   content: "🎉 Selected as a recipient of the **Doctoral Excellence Scholarship (Science and Engineering)**!"
 - date: "Jun 2026"
